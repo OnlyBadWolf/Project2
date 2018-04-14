@@ -12,3 +12,8 @@ MainInterface::~MainInterface()
 {
     delete ui;
 }
+
+void MainInterface::on_cardType_radioButton_clicked()
+{
+
+}

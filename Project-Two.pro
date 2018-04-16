@@ -25,10 +25,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        maininterface.cpp
+        maininterface.cpp \
+    dbmanager.cpp
 
 HEADERS += \
-        maininterface.h
+        maininterface.h \
+    constants.h \
+    dbmanager.h
 
 FORMS += \
         maininterface.ui

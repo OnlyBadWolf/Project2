@@ -5,6 +5,8 @@
 #include <QList>
 #include "constants.h"
 #include <QSqlDatabase>
+#include <QDebug>
+
 
 class dbManager
 {

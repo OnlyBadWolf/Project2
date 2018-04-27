@@ -75,7 +75,7 @@ private slots:
 
     void on_search_customer_clicked();
 
-    void on_AdminWidget_currentChanged(int arg1);
+    //void on_AdminWidget_currentChanged(int arg1);//
 
     void on_delete_customer_clicked();
 

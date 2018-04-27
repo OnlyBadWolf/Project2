@@ -25,7 +25,7 @@ MainInterface::~MainInterface()
 
 void MainInterface::on_SilverProductDetails_clicked()
 {
-        ui->HomeWidget->setCurrentIndex(3);
+    ui->HomeWidget->setCurrentIndex(3);
 }
 
 void MainInterface::on_GoldProductDetails_clicked()
@@ -102,9 +102,9 @@ void MainInterface::on_loginButton_clicked()
         ui->label_status->setText("");
         ui->AdminWidget->setCurrentIndex(1);
     }
+
     else
     {
-
         ui->label_status->setText("Invalid Username or Password");
         ui->Password_LineEdit->setText("");
     }
@@ -174,7 +174,7 @@ void MainInterface::on_pushButton_3_clicked()
     ui->rating->setCurrentIndex(0);
     ui->name_edit->clear();
     ui->address_edit->clear();
-    ui->add_status->setText("Status");
+    ui->add_status->setText("Add Status");
 }
 
 void MainInterface::on_add_clicked()
@@ -204,7 +204,7 @@ void MainInterface::on_add_clicked()
     }
     else
     {
-        ui->add_status->setText("Customer already exists");
+        ui->add_status->setText("Customer Already Exists");
     }
 }
 
@@ -242,11 +242,11 @@ void MainInterface::on_search_customer_clicked()
 
     if(dbManager::instance().customerExists(Customer(name, address, interest, rating, pamphlet)))
     {
-        ui->delete_status->setText("Customer found");
+        ui->delete_status->setText("Customer Found");
     }
     else
     {
-        ui->delete_status->setText("Sorry customer does not exists in the database");
+        ui->delete_status->setText("Customer does not exists in the Database");
     }
 
     model->setQuery(query);
@@ -271,12 +271,12 @@ void MainInterface::on_delete_customer_clicked()
         }
         else
         {
-            ui->delete_status->setText("Failed To Remove Customer'");
+            ui->delete_status->setText("Failed to Remove Customer'");
         }
     }
     else
     {
-        ui->delete_status->setText("Customer Could Not Be Found");
+        ui->delete_status->setText("Customer could not be Found");
     }
 }
 
@@ -321,11 +321,11 @@ void MainInterface::on_search_button_clicked()
 
     if(dbManager::instance().customerExists(Customer(name, address, interest, rating, pamphlet)))
     {
-        ui->search_status->setText("Customer found");
+        ui->search_status->setText("Customer Found");
     }
     else
     {
-        ui->search_status->setText("Sorry customer does not exists in the database");
+        ui->search_status->setText("Customer does not exists in the Database");
     }
 
     while(query.next())
@@ -337,33 +337,33 @@ void MainInterface::on_search_button_clicked()
         pamphlet = query.value(4).toString();
     }
 
-    if(interest == "very interested")
+    if(interest == "Very Interested")
     {
         interestIndex = 1;
     }
-    else if(interest == "somewhat interested")
+    else if(interest == "Somewhat Interested")
     {
         interestIndex = 2;
     }
-    else if(interest == "not interested")
+    else if(interest == "Not Interested")
     {
         interestIndex = 3;
     }
 
-    if(rating == "key")
+    if(rating == "Key")
     {
         ratingIndex = 1;
     }
-    else if(rating == "nice to have")
+    else if(rating == "Nice to Have")
     {
         ratingIndex = 2;
     }
 
-    if(pamphlet == "yes")
+    if(pamphlet == "Yes")
     {
         pamphletIndex = 1;
     }
-    else if(pamphlet == "no")
+    else if(pamphlet == "No")
     {
         pamphletIndex = 2;
     }

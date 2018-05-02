@@ -402,3 +402,8 @@ void MainInterface::on_update_clicked()
         ui->search_status->setText("Update Failed");
     }
 }
+
+void MainInterface::on_BackButton_2_clicked()
+{
+    ui->PaymentInformation->setCurrentIndex(0);
+}

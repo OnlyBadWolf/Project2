@@ -87,6 +87,8 @@ private slots:
 
     void on_update_clicked();
 
+    void on_BackButton_2_clicked();
+
 private:
     Ui::MainInterface *ui;
 };

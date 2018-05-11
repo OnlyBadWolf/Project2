@@ -4,6 +4,8 @@
 #include <QtSql>
 #include <QList>
 #include "constants.h"
+#include "customer.h"
+#include "purchases.h"
 #include <QSqlDatabase>
 #include <QDebug>
 
@@ -22,6 +24,12 @@ public:
 
     dbManager(const dbManager&) = delete; //delete copy constructor.
     void operator =(const dbManager&) = delete; //delete = operator.
+
+    bool customerExists(const Customer& customer);
+    bool addCustomer(const Customer& newCustomer);
+    bool deleteCustomer(const Customer& customer);
+
+    bool addPurchase(const Purchases& newPurchase);
 };
 
 #endif // DBMANAGER_H

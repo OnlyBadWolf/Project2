@@ -6,7 +6,7 @@
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "Project2/maininterface.h"
+#include "maininterface.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainInterface_t {
-    QByteArrayData data[34];
-    char stringdata0[798];
+    QByteArrayData data[33];
+    char stringdata0[787];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -58,13 +58,12 @@ QT_MOC_LITERAL(23, 555, 14), // "on_add_clicked"
 QT_MOC_LITERAL(24, 570, 23), // "on_pushButton_5_clicked"
 QT_MOC_LITERAL(25, 594, 23), // "on_pushButton_6_clicked"
 QT_MOC_LITERAL(26, 618, 26), // "on_search_customer_clicked"
-QT_MOC_LITERAL(27, 645, 29), // "on_AdminWidget_currentChanged"
-QT_MOC_LITERAL(28, 675, 4), // "arg1"
-QT_MOC_LITERAL(29, 680, 26), // "on_delete_customer_clicked"
-QT_MOC_LITERAL(30, 707, 23), // "on_pushButton_7_clicked"
-QT_MOC_LITERAL(31, 731, 23), // "on_pushButton_8_clicked"
-QT_MOC_LITERAL(32, 755, 24), // "on_search_button_clicked"
-QT_MOC_LITERAL(33, 780, 17) // "on_update_clicked"
+QT_MOC_LITERAL(27, 645, 26), // "on_delete_customer_clicked"
+QT_MOC_LITERAL(28, 672, 23), // "on_pushButton_7_clicked"
+QT_MOC_LITERAL(29, 696, 23), // "on_pushButton_8_clicked"
+QT_MOC_LITERAL(30, 720, 24), // "on_search_button_clicked"
+QT_MOC_LITERAL(31, 745, 17), // "on_update_clicked"
+QT_MOC_LITERAL(32, 763, 23) // "on_BackButton_2_clicked"
 
     },
     "MainInterface\0on_SilverProductDetails_clicked\0"
@@ -86,10 +85,10 @@ QT_MOC_LITERAL(33, 780, 17) // "on_update_clicked"
     "on_add_clicked\0on_pushButton_5_clicked\0"
     "on_pushButton_6_clicked\0"
     "on_search_customer_clicked\0"
-    "on_AdminWidget_currentChanged\0arg1\0"
     "on_delete_customer_clicked\0"
     "on_pushButton_7_clicked\0on_pushButton_8_clicked\0"
-    "on_search_button_clicked\0on_update_clicked"
+    "on_search_button_clicked\0on_update_clicked\0"
+    "on_BackButton_2_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -132,12 +131,12 @@ static const uint qt_meta_data_MainInterface[] = {
       24,    0,  191,    2, 0x08 /* Private */,
       25,    0,  192,    2, 0x08 /* Private */,
       26,    0,  193,    2, 0x08 /* Private */,
-      27,    1,  194,    2, 0x08 /* Private */,
-      29,    0,  197,    2, 0x08 /* Private */,
-      30,    0,  198,    2, 0x08 /* Private */,
-      31,    0,  199,    2, 0x08 /* Private */,
-      32,    0,  200,    2, 0x08 /* Private */,
-      33,    0,  201,    2, 0x08 /* Private */,
+      27,    0,  194,    2, 0x08 /* Private */,
+      28,    0,  195,    2, 0x08 /* Private */,
+      29,    0,  196,    2, 0x08 /* Private */,
+      30,    0,  197,    2, 0x08 /* Private */,
+      31,    0,  198,    2, 0x08 /* Private */,
+      32,    0,  199,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -165,7 +164,7 @@ static const uint qt_meta_data_MainInterface[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::Int,   28,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -206,15 +205,16 @@ void MainInterface::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         case 22: _t->on_pushButton_5_clicked(); break;
         case 23: _t->on_pushButton_6_clicked(); break;
         case 24: _t->on_search_customer_clicked(); break;
-        case 25: _t->on_AdminWidget_currentChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 26: _t->on_delete_customer_clicked(); break;
-        case 27: _t->on_pushButton_7_clicked(); break;
-        case 28: _t->on_pushButton_8_clicked(); break;
-        case 29: _t->on_search_button_clicked(); break;
-        case 30: _t->on_update_clicked(); break;
+        case 25: _t->on_delete_customer_clicked(); break;
+        case 26: _t->on_pushButton_7_clicked(); break;
+        case 27: _t->on_pushButton_8_clicked(); break;
+        case 28: _t->on_search_button_clicked(); break;
+        case 29: _t->on_update_clicked(); break;
+        case 30: _t->on_BackButton_2_clicked(); break;
         default: ;
         }
     }
+    Q_UNUSED(_a);
 }
 
 QT_INIT_METAOBJECT const QMetaObject MainInterface::staticMetaObject = {

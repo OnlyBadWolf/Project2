@@ -6,12 +6,21 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>839</width>
-    <height>559</height>
+    <width>861</width>
+    <height>564</height>
    </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Heiti SC</family>
+    <pointsize>16</pointsize>
+   </font>
   </property>
   <property name="windowTitle">
    <string>MainInterface</string>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QTabWidget" name="tabWidget">
@@ -37,7 +46,7 @@
      <enum>QTabWidget::Triangular</enum>
     </property>
     <property name="currentIndex">
-     <number>6</number>
+     <number>0</number>
     </property>
     <property name="elideMode">
      <enum>Qt::ElideRight</enum>
@@ -84,7 +93,7 @@
             </font>
            </property>
            <property name="text">
-            <string>       $ 29.99</string>
+            <string>       $ 69.99</string>
            </property>
           </widget>
          </item>
@@ -121,7 +130,7 @@
             </font>
            </property>
            <property name="text">
-            <string>       $ 29.99</string>
+            <string>       $ 49.99</string>
            </property>
           </widget>
          </item>
@@ -476,9 +485,15 @@
          <rect>
           <x>440</x>
           <y>270</y>
-          <width>113</width>
-          <height>32</height>
+          <width>138</width>
+          <height>28</height>
          </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Heiti SC</family>
+          <pointsize>14</pointsize>
+         </font>
         </property>
         <property name="text">
          <string>Back to Home</string>
@@ -647,7 +662,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="ShowReviews">
        <widget class="QListWidget" name="listWidget">
@@ -663,7 +678,7 @@
        <widget class="QPushButton" name="WriteReviewButton">
         <property name="geometry">
          <rect>
-          <x>270</x>
+          <x>300</x>
           <y>350</y>
           <width>159</width>
           <height>32</height>
@@ -699,6 +714,7 @@
            <property name="font">
             <font>
              <family>Heiti SC</family>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="text">
@@ -735,6 +751,7 @@
            <property name="font">
             <font>
              <family>Heiti SC</family>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="text">
@@ -757,6 +774,7 @@
            <property name="font">
             <font>
              <family>Heiti SC</family>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="text">
@@ -772,32 +790,11 @@
           </widget>
          </item>
          <item row="3" column="0">
-          <widget class="QLabel" name="label_26">
-           <property name="font">
-            <font>
-             <family>Heiti SC</family>
-            </font>
-           </property>
-           <property name="text">
-            <string>Email Address:</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="1">
-          <widget class="QLineEdit" name="lineEdit_2">
-           <property name="text">
-            <string/>
-           </property>
-           <property name="placeholderText">
-            <string>jSmith@hotmail.com</string>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="0">
           <widget class="QLabel" name="label_24">
            <property name="font">
             <font>
              <family>Heiti SC</family>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="text">
@@ -805,7 +802,7 @@
            </property>
           </widget>
          </item>
-         <item row="4" column="1">
+         <item row="3" column="1">
           <widget class="QTextEdit" name="textEdit">
            <property name="baseSize">
             <size>
@@ -815,7 +812,7 @@
            </property>
           </widget>
          </item>
-         <item row="5" column="1">
+         <item row="4" column="1">
           <widget class="QDialogButtonBox" name="buttonBox">
            <property name="standardButtons">
             <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
@@ -894,7 +891,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="ChoosingProduct">
        <widget class="QFrame" name="Frame1">
@@ -1242,9 +1239,9 @@
        <widget class="QFrame" name="frame_3">
         <property name="geometry">
          <rect>
-          <x>10</x>
+          <x>420</x>
           <y>50</y>
-          <width>381</width>
+          <width>371</width>
           <height>261</height>
          </rect>
         </property>
@@ -1340,31 +1337,26 @@
           <rect>
            <x>20</x>
            <y>20</y>
-           <width>341</width>
+           <width>331</width>
            <height>221</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_6">
-          <item row="1" column="0">
-           <widget class="QLineEdit" name="firstName_lineEdit">
-            <property name="text">
-             <string/>
-            </property>
-            <property name="placeholderText">
-             <string>First Name</string>
-            </property>
-           </widget>
-          </item>
           <item row="3" column="0">
-           <widget class="QComboBox" name="country_comboBox">
-            <item>
-             <property name="text">
-              <string>United States</string>
-             </property>
-            </item>
+           <widget class="QLineEdit" name="city_lineEdit">
+            <property name="placeholderText">
+             <string>City</string>
+            </property>
            </widget>
           </item>
           <item row="3" column="1">
+           <widget class="QLineEdit" name="zip_lineEdit">
+            <property name="placeholderText">
+             <string>Zipcode</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
            <widget class="QComboBox" name="state_comboBox">
             <item>
              <property name="text">
@@ -1373,44 +1365,32 @@
             </item>
            </widget>
           </item>
-          <item row="1" column="1">
-           <widget class="QLineEdit" name="lastName_lineEdit">
-            <property name="text">
-             <string/>
-            </property>
-            <property name="placeholderText">
-             <string>Last Name</string>
-            </property>
+          <item row="2" column="0">
+           <widget class="QComboBox" name="country_comboBox">
+            <item>
+             <property name="text">
+              <string>United States</string>
+             </property>
+            </item>
            </widget>
           </item>
-          <item row="4" column="0">
-           <widget class="QLineEdit" name="city_lineEdit">
-            <property name="placeholderText">
-             <string>City</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="1">
-           <widget class="QLineEdit" name="zip_lineEdit">
-            <property name="placeholderText">
-             <string>Zipcode</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="0" colspan="2">
-           <widget class="QLineEdit" name="email_label">
-            <property name="placeholderText">
-             <string>Email</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="0" colspan="2">
+          <item row="1" column="0" colspan="2">
            <widget class="QLineEdit" name="address_lineEdit">
             <property name="text">
              <string/>
             </property>
             <property name="placeholderText">
-             <string>Address</string>
+             <string>Street Address</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" colspan="2">
+           <widget class="QLineEdit" name="firstName_lineEdit">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="placeholderText">
+             <string>Business Name</string>
             </property>
            </widget>
           </item>
@@ -1423,7 +1403,7 @@
         </property>
         <property name="geometry">
          <rect>
-          <x>30</x>
+          <x>430</x>
           <y>20</y>
           <width>147</width>
           <height>22</height>
@@ -1448,7 +1428,7 @@
         </property>
         <property name="geometry">
          <rect>
-          <x>430</x>
+          <x>20</x>
           <y>20</y>
           <width>152</width>
           <height>18</height>
@@ -1470,10 +1450,10 @@
        <widget class="QFrame" name="frame_4">
         <property name="geometry">
          <rect>
-          <x>410</x>
+          <x>20</x>
           <y>50</y>
           <width>381</width>
-          <height>171</height>
+          <height>111</height>
          </rect>
         </property>
         <property name="frameShape">
@@ -1569,18 +1549,18 @@
            <x>20</x>
            <y>20</y>
            <width>341</width>
-           <height>131</height>
+           <height>71</height>
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_8" columnstretch="1,0">
-          <item row="1" column="0" colspan="2">
+          <item row="0" column="0" colspan="2">
            <widget class="QLineEdit" name="cardNumeber_lineEdit">
             <property name="placeholderText">
              <string>Credit Card Number</string>
             </property>
            </widget>
           </item>
-          <item row="3" column="1">
+          <item row="2" column="1">
            <widget class="QLineEdit" name="securityCode_lineEdit">
             <property name="inputMethodHints">
              <set>Qt::ImhDigitsOnly|Qt::ImhHiddenText|Qt::ImhNoPredictiveText</set>
@@ -1590,74 +1570,366 @@
             </property>
            </widget>
           </item>
-          <item row="3" column="0">
+          <item row="2" column="0">
            <widget class="QDateEdit" name="dateEdit">
             <property name="displayFormat">
              <string>Mm/dd/yyyy</string>
             </property>
            </widget>
           </item>
-          <item row="0" column="0">
-           <widget class="QRadioButton" name="cardType_radioButton">
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="verticalLayoutWidget_6">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>320</y>
+          <width>160</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <item>
+          <widget class="QPushButton" name="officiallyBuyNowButton">
+           <property name="font">
+            <font>
+             <family>Heiti SC</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Buy Now</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="BackButton_2">
+           <property name="font">
+            <font>
+             <family>Heiti SC</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Back</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QFrame" name="frame_5">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>170</y>
+          <width>381</width>
+          <height>231</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QWidget" name="gridLayoutWidget_14">
+         <property name="geometry">
+          <rect>
+           <x>460</x>
+           <y>280</y>
+           <width>421</width>
+           <height>181</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_13">
+          <item row="1" column="0">
+           <widget class="QLineEdit" name="lineEdit_51">
             <property name="text">
              <string/>
             </property>
-            <property name="icon">
-             <iconset>
-              <normalon>cart-credit-cards.jpg</normalon>
-              <disabledon>cart-credit-cards.jpg</disabledon>
-              <activeon>cart-credit-cards.jpg</activeon>
-              <selectedon>cart-credit-cards.jpg</selectedon>
-             </iconset>
-            </property>
-            <property name="iconSize">
-             <size>
-              <width>120</width>
-              <height>20</height>
-             </size>
-            </property>
-            <property name="checked">
-             <bool>true</bool>
+            <property name="placeholderText">
+             <string>First Name</string>
             </property>
            </widget>
           </item>
-          <item row="0" column="1">
-           <widget class="QRadioButton" name="other_radioButton">
+          <item row="3" column="0">
+           <widget class="QComboBox" name="comboBox_18">
+            <item>
+             <property name="text">
+              <string>United States</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QComboBox" name="comboBox_19">
+            <item>
+             <property name="text">
+              <string>Select State</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="lineEdit_52">
             <property name="text">
              <string/>
             </property>
-            <property name="icon">
-             <iconset>
-              <normaloff>cart-paypal.jpg</normaloff>cart-paypal.jpg</iconset>
+            <property name="placeholderText">
+             <string>Last Name</string>
             </property>
-            <property name="iconSize">
-             <size>
-              <width>90</width>
-              <height>20</height>
-             </size>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLineEdit" name="lineEdit_53">
+            <property name="placeholderText">
+             <string>City</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLineEdit" name="lineEdit_54">
+            <property name="placeholderText">
+             <string>Zipcode</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" colspan="2">
+           <widget class="QLineEdit" name="lineEdit_55">
+            <property name="placeholderText">
+             <string>Email</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0" colspan="2">
+           <widget class="QLineEdit" name="lineEdit_56">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="placeholderText">
+             <string>Address</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="gridLayoutWidget_15">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>10</y>
+           <width>371</width>
+           <height>217</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_14" columnstretch="0,0,0,0">
+          <item row="0" column="2">
+           <widget class="QLabel" name="label_43">
+            <property name="font">
+             <font>
+              <family>Heiti SC</family>
+              <pointsize>14</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Qty</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="3">
+           <widget class="QLabel" name="label_40">
+            <property name="text">
+             <string>$49.99</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QRadioButton" name="radioButton">
+            <property name="font">
+             <font>
+              <family>Heiti SC</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Silver</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="3">
+           <widget class="QLabel" name="label_41">
+            <property name="text">
+             <string>$69.99</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QLabel" name="label_34">
+            <property name="text">
+             <string>$29.99</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QSpinBox" name="silver_spinBox_2"/>
+          </item>
+          <item row="0" column="3">
+           <widget class="QLabel" name="label_42">
+            <property name="font">
+             <font>
+              <family>Heiti SC</family>
+              <pointsize>14</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Price</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="label_3">
+            <property name="font">
+             <font>
+              <family>Heiti SC</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Sales Tax:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="0">
+           <widget class="QLabel" name="label_6">
+            <property name="font">
+             <font>
+              <family>Heiti SC</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Total Amount:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_26">
+            <property name="font">
+             <font>
+              <family>Heiti SC</family>
+              <pointsize>14</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Items Selected:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="QSpinBox" name="platinum_spinBox_2"/>
+          </item>
+          <item row="7" column="3">
+           <widget class="QLabel" name="totalAmount">
+            <property name="font">
+             <font>
+              <family>Heiti SC</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>totalAmount</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="2">
+           <widget class="QSpinBox" name="gold_spinBox_2"/>
+          </item>
+          <item row="6" column="3">
+           <widget class="QLabel" name="salesTax">
+            <property name="font">
+             <font>
+              <family>Heiti SC</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>salesTax</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QRadioButton" name="radioButton_3">
+            <property name="font">
+             <font>
+              <family>Heiti SC</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Platinum</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QRadioButton" name="radioButton_2">
+            <property name="font">
+             <font>
+              <family>Heiti SC</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Gold</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="label_44">
+            <property name="font">
+             <font>
+              <family>Heiti SC</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Subtotal:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="3">
+           <widget class="QLabel" name="subtotal">
+            <property name="font">
+             <font>
+              <family>Heiti SC</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>subtotal</string>
             </property>
            </widget>
           </item>
          </layout>
         </widget>
        </widget>
-       <widget class="QPushButton" name="officiallyBuyNowButton">
+       <widget class="QPushButton" name="pushButton_9">
         <property name="geometry">
          <rect>
-          <x>510</x>
-          <y>230</y>
-          <width>189</width>
-          <height>32</height>
+          <x>430</x>
+          <y>330</y>
+          <width>91</width>
+          <height>31</height>
          </rect>
         </property>
-        <property name="font">
-         <font>
-          <family>Heiti SC</family>
-          <pointsize>16</pointsize>
-         </font>
-        </property>
         <property name="text">
-         <string>Buy Now</string>
+         <string>Calculate</string>
         </property>
        </widget>
       </widget>
@@ -1725,7 +1997,7 @@
        <rect>
         <x>310</x>
         <y>10</y>
-        <width>177</width>
+        <width>162</width>
         <height>30</height>
        </rect>
       </property>
@@ -1747,11 +2019,14 @@
      <widget class="QStackedWidget" name="AdminWidget">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>50</y>
-        <width>801</width>
-        <height>411</height>
+        <x>10</x>
+        <y>60</y>
+        <width>821</width>
+        <height>401</height>
        </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
       </property>
       <widget class="QWidget" name="Login">
        <widget class="QWidget" name="verticalLayoutWidget">
@@ -1773,6 +2048,15 @@
          </item>
          <item>
           <widget class="QLineEdit" name="Password_LineEdit">
+           <property name="inputMethodHints">
+            <set>Qt::ImhHiddenText|Qt::ImhNoAutoUppercase|Qt::ImhNoPredictiveText|Qt::ImhSensitiveData</set>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::Password</enum>
+           </property>
            <property name="placeholderText">
             <string>Password</string>
            </property>
@@ -1793,8 +2077,965 @@
          </item>
         </layout>
        </widget>
+       <widget class="QLabel" name="label_status">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>230</y>
+          <width>451</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Heiti SC</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Status</string>
+        </property>
+       </widget>
       </widget>
-      <widget class="QWidget" name="Options"/>
+      <widget class="QWidget" name="Options">
+       <widget class="QPushButton" name="customer_listings">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>70</y>
+          <width>221</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Heiti SC</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Customer Listings</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="logout">
+        <property name="geometry">
+         <rect>
+          <x>710</x>
+          <y>350</y>
+          <width>97</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Heiti SC</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Logout</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="add_customer">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>220</y>
+          <width>221</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Heiti SC</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Add Customer</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>220</y>
+          <width>221</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Heiti TC</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Delete Customer</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_7">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>70</y>
+          <width>221</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Heiti SC</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Update Customer</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="listings">
+       <widget class="QTableView" name="table_listings">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>581</width>
+          <height>341</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Heiti SC</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="back1">
+        <property name="geometry">
+         <rect>
+          <x>680</x>
+          <y>330</y>
+          <width>81</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Heiti SC</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Back</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="verticalLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>20</y>
+          <width>147</width>
+          <height>148</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="SortBy_label">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="font">
+            <font>
+             <family>Heiti SC</family>
+             <pointsize>18</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+             <kerning>true</kerning>
+            </font>
+           </property>
+           <property name="text">
+            <string>Sort By:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="sort_name">
+           <property name="font">
+            <font>
+             <family>Heiti SC</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Name</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="sort_key">
+           <property name="font">
+            <font>
+             <family>Heiti SC</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Key Clients</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="sort_purchases">
+           <property name="font">
+            <font>
+             <family>Heiti SC</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Purchases</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="addCustomer">
+       <widget class="QWidget" name="verticalLayoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>249</x>
+          <y>260</y>
+          <width>141</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QPushButton" name="add">
+           <property name="font">
+            <font>
+             <family>Heiti SC</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Add </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_9">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_3">
+           <property name="font">
+            <font>
+             <family>Heiti SC</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Back</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="gridLayoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>20</y>
+          <width>521</width>
+          <height>239</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_36">
+           <property name="font">
+            <font>
+             <family>Heiti SC</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>             Address:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="0">
+          <widget class="QLabel" name="label_37">
+           <property name="font">
+            <font>
+             <family>Heiti SC</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>(Select 'no' if not sure)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="QComboBox" name="rating">
+           <item>
+            <property name="text">
+             <string>[Please Select One]</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Key</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Nice to Have</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="name_edit">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="placeholderText">
+            <string>John Smith -or- Smith's Cafe</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <spacer name="verticalSpacer_5">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_38">
+           <property name="font">
+            <font>
+             <family>Heiti SC</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>(Person or Company)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QLabel" name="label_21">
+           <property name="font">
+            <font>
+             <family>Heiti SC</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>                Rating:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QComboBox" name="interest">
+           <property name="currentText">
+            <string>[Please Select One]</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>[Please Select One]</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Very Interested</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Somewhat Interested</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Not Interested</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <spacer name="verticalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="9" column="1">
+          <widget class="QComboBox" name="pamphlet">
+           <item>
+            <property name="text">
+             <string>[Please Select One]</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Yes</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>No</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_11">
+           <property name="font">
+            <font>
+             <family>Heiti SC</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>   Interest Level:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="0">
+          <spacer name="verticalSpacer_6">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_35">
+           <property name="font">
+            <font>
+             <family>Heiti SC</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>                Name:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="0">
+          <widget class="QLabel" name="label_27">
+           <property name="font">
+            <font>
+             <family>Heiti SC</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>          Pamphlet:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="address_edit">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="placeholderText">
+            <string>Street, City, State, Zipcode</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <spacer name="verticalSpacer_7">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="add_status">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>260</y>
+          <width>271</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Heiti SC</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Add Status</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="customerDelete">
+       <widget class="QTableView" name="table_search">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>110</y>
+          <width>551</width>
+          <height>61</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QWidget" name="gridLayoutWidget_8">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>20</y>
+          <width>551</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_28">
+           <property name="font">
+            <font>
+             <family>Heiti SC</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Enter a Name you'd Like to Delete:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="name_search">
+           <property name="placeholderText">
+            <string>John Smith -or- Smith's Cafe</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="verticalLayoutWidget_4">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>270</y>
+          <width>160</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QPushButton" name="delete_customer">
+           <property name="font">
+            <font>
+             <family>Heiti SC</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Delete</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_8">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_6">
+           <property name="font">
+            <font>
+             <family>Heiti SC</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Back</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="delete_status">
+        <property name="geometry">
+         <rect>
+          <x>248</x>
+          <y>240</y>
+          <width>261</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Heiti SC</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Delete Status</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="search_customer">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>60</y>
+          <width>97</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Heiti SC</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Search</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_39">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>50</y>
+          <width>233</width>
+          <height>10</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Heiti SC</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>                        (Person or Company)</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="updateCustomer">
+       <widget class="QWidget" name="gridLayoutWidget_9">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>110</y>
+          <width>551</width>
+          <height>178</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="3" column="1">
+          <widget class="QComboBox" name="rating_2">
+           <item>
+            <property name="text">
+             <string>[Please Select One]</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Key</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Nice to Have</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="address_edit_2">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="placeholderText">
+            <string>Street, City, State, Zipcode</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_32">
+           <property name="font">
+            <font>
+             <family>Heiti SC</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>         Address:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_29">
+           <property name="font">
+            <font>
+             <family>Heiti SC</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>            Rating:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_33">
+           <property name="font">
+            <font>
+             <family>Heiti SC</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>      Pamphlet:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_30">
+           <property name="font">
+            <font>
+             <family>Heiti SC</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>             Name:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QComboBox" name="interest_2">
+           <property name="currentText">
+            <string>[Please Select One]</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>[Please Select One]</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Very Interested</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Somewhat Interested</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Not Interested</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_31">
+           <property name="font">
+            <font>
+             <family>Heiti SC</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Interest Level:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="name_edit_2">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="placeholderText">
+            <string>John Smith -or- Smith's Cafe</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QComboBox" name="pamphlet_2">
+           <item>
+            <property name="text">
+             <string>[Please Select One]</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Yes</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>No</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="verticalLayoutWidget_5">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>300</y>
+          <width>160</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <widget class="QPushButton" name="update">
+           <property name="font">
+            <font>
+             <family>Heiti SC</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Update</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_10">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_8">
+           <property name="font">
+            <font>
+             <family>Heiti SC</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Back</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLineEdit" name="search_name">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>10</y>
+          <width>281</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="placeholderText">
+         <string>Search By Name</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="search_status">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>50</y>
+          <width>321</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Heiti SC</family>
+         </font>
+        </property>
+        <property name="text">
+         <string>Update Status</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="search_button">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>70</y>
+          <width>141</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Heiti SC</family>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Search</string>
+        </property>
+       </widget>
+      </widget>
      </widget>
     </widget>
    </widget>
@@ -1804,7 +3045,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>839</width>
+     <width>861</width>
      <height>22</height>
     </rect>
    </property>

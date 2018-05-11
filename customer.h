@@ -2,8 +2,9 @@
 #define CUSTOMER_H
 
 #include <QtSql>
+#include "purchases.h"
 
-class Customer
+class Customer : public Purchases
 {
 public:
     Customer();

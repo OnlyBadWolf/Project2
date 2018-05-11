@@ -26,12 +26,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         maininterface.cpp \
-    dbmanager.cpp
+    dbmanager.cpp \
+    customer.cpp \
+    purchases.cpp
 
 HEADERS += \
         maininterface.h \
     constants.h \
-    dbmanager.h
+    dbmanager.h \
+    customer.h \
+    purchases.h
 
 FORMS += \
         maininterface.ui

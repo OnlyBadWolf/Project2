@@ -89,7 +89,25 @@ private slots:
 
     void on_BackButton_2_clicked();
 
-    void on_pushButton_9_clicked();
+    void on_buyButton_clicked();
+
+    void on_pamplet_button_clicked();
+
+    void on_Pamplet_BackToHome_clicked();
+
+    void on_GetPamphlet_pushButton_clicked();
+
+    void on_SortByPampletRequest_clicked();
+
+    void on_silver_spinBox_2_valueChanged(int arg1);
+
+    void on_gold_spinBox_2_valueChanged(int arg1);
+
+    void on_platinum_spinBox_2_valueChanged(int arg1);
+
+    void makeReviewsAvailable();
+
+    void purchaseAmt(double, double, double);
 
 private:
     Ui::MainInterface *ui;

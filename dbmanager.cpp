@@ -88,24 +88,38 @@ bool dbManager::addCustomer(const Customer& newCustomer)
     rating = newCustomer.getCustomerRating();
     pamphlet = newCustomer.getCustomerPamphlet();
 
-    query.prepare("INSERT INTO customers (name, address, interest, rating, pamphlet) VALUES (:name, :address, :interest, :rating, :pamphlet)");
-    query.bindValue(":name", name);
-    query.bindValue(":address", address);
-    query.bindValue(":interest", interest);
-    query.bindValue(":rating", rating);
-    query.bindValue(":pamphlet", pamphlet);
+    try
+    {
+        if (interest == "[Please Select One]" || rating == "[Please Select One]" || pamphlet == "[Please Select One]")
+        {
+            throw QString("Must select from opitions");
+        }
 
-    if(query.exec())
-    {
-        qDebug() << "AddCustomer success:";
-        return true;
+        query.prepare("INSERT INTO customers (name, address, interest, rating, pamphlet) VALUES (:name, :address, :interest, :rating, :pamphlet)");
+        query.bindValue(":name", name);
+        query.bindValue(":address", address);
+        query.bindValue(":interest", interest);
+        query.bindValue(":rating", rating);
+        query.bindValue(":pamphlet", pamphlet);
+
+        if(query.exec())
+        {
+            qDebug() << "AddCustomer success:";
+            return true;
+        }
+        else
+        {
+            qDebug() << "AddCustomer fail:"
+                     << query.lastError();
+            return false;
+        }
     }
-    else
+    catch (QString statemet)
     {
-        qDebug() << "AddCustomer fail:"
-                 << query.lastError();
+        qDebug () << statemet;
         return false;
     }
+
 }
 
 bool dbManager::deleteCustomer(const Customer& customer)

@@ -19,6 +19,7 @@
 #include <QtWidgets/QFormLayout>
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QGridLayout>
+#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
@@ -270,9 +271,9 @@ public:
     QWidget *listings;
     QTableView *table_listings;
     QPushButton *back1;
-    QWidget *verticalLayoutWidget_2;
-    QVBoxLayout *verticalLayout_2;
     QLabel *SortBy_label;
+    QWidget *horizontalLayoutWidget;
+    QHBoxLayout *horizontalLayout;
     QPushButton *sort_name;
     QPushButton *sort_key;
     QPushButton *sort_purchases;
@@ -1069,7 +1070,7 @@ public:
         pushButton_4->setGeometry(QRect(460, 180, 113, 32));
         label_2 = new QLabel(Confirmation);
         label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setGeometry(QRect(140, 60, 68, 16));
+        label_2->setGeometry(QRect(150, 30, 68, 16));
         PaymentInformation->addWidget(Confirmation);
         BillingInfo = new QWidget();
         BillingInfo->setObjectName(QStringLiteral("BillingInfo"));
@@ -1338,7 +1339,7 @@ public:
 
         gridLayoutWidget_15 = new QWidget(frame_5);
         gridLayoutWidget_15->setObjectName(QStringLiteral("gridLayoutWidget_15"));
-        gridLayoutWidget_15->setGeometry(QRect(10, 10, 381, 217));
+        gridLayoutWidget_15->setGeometry(QRect(10, 10, 385, 217));
         gridLayout_14 = new QGridLayout(gridLayoutWidget_15);
         gridLayout_14->setSpacing(6);
         gridLayout_14->setContentsMargins(11, 11, 11, 11);
@@ -1475,7 +1476,7 @@ public:
         Admin->setObjectName(QStringLiteral("Admin"));
         Company_label_9 = new QLabel(Admin);
         Company_label_9->setObjectName(QStringLiteral("Company_label_9"));
-        Company_label_9->setGeometry(QRect(310, 10, 162, 30));
+        Company_label_9->setGeometry(QRect(310, 10, 171, 30));
         Company_label_9->setFont(font10);
         AdminWidget = new QStackedWidget(Admin);
         AdminWidget->setObjectName(QStringLiteral("AdminWidget"));
@@ -1543,23 +1544,16 @@ public:
         listings->setObjectName(QStringLiteral("listings"));
         table_listings = new QTableView(listings);
         table_listings->setObjectName(QStringLiteral("table_listings"));
-        table_listings->setGeometry(QRect(20, 20, 651, 341));
+        table_listings->setGeometry(QRect(20, 20, 801, 261));
         table_listings->setFont(font9);
         back1 = new QPushButton(listings);
         back1->setObjectName(QStringLiteral("back1"));
         back1->setGeometry(QRect(710, 330, 81, 32));
         back1->setFont(font);
-        verticalLayoutWidget_2 = new QWidget(listings);
-        verticalLayoutWidget_2->setObjectName(QStringLiteral("verticalLayoutWidget_2"));
-        verticalLayoutWidget_2->setGeometry(QRect(684, 62, 131, 131));
-        verticalLayout_2 = new QVBoxLayout(verticalLayoutWidget_2);
-        verticalLayout_2->setSpacing(6);
-        verticalLayout_2->setContentsMargins(11, 11, 11, 11);
-        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
-        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
-        SortBy_label = new QLabel(verticalLayoutWidget_2);
+        SortBy_label = new QLabel(listings);
         SortBy_label->setObjectName(QStringLiteral("SortBy_label"));
         SortBy_label->setEnabled(true);
+        SortBy_label->setGeometry(QRect(30, 290, 146, 15));
         QFont font18;
         font18.setFamily(QStringLiteral("Heiti SC"));
         font18.setPointSize(15);
@@ -1567,32 +1561,37 @@ public:
         font18.setWeight(75);
         font18.setKerning(true);
         SortBy_label->setFont(font18);
-
-        verticalLayout_2->addWidget(SortBy_label);
-
-        sort_name = new QPushButton(verticalLayoutWidget_2);
+        horizontalLayoutWidget = new QWidget(listings);
+        horizontalLayoutWidget->setObjectName(QStringLiteral("horizontalLayoutWidget"));
+        horizontalLayoutWidget->setGeometry(QRect(40, 310, 518, 32));
+        horizontalLayout = new QHBoxLayout(horizontalLayoutWidget);
+        horizontalLayout->setSpacing(6);
+        horizontalLayout->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+        horizontalLayout->setContentsMargins(0, 0, 0, 0);
+        sort_name = new QPushButton(horizontalLayoutWidget);
         sort_name->setObjectName(QStringLiteral("sort_name"));
-        sort_name->setFont(font9);
+        sort_name->setFont(font);
 
-        verticalLayout_2->addWidget(sort_name);
+        horizontalLayout->addWidget(sort_name);
 
-        sort_key = new QPushButton(verticalLayoutWidget_2);
+        sort_key = new QPushButton(horizontalLayoutWidget);
         sort_key->setObjectName(QStringLiteral("sort_key"));
-        sort_key->setFont(font9);
+        sort_key->setFont(font);
 
-        verticalLayout_2->addWidget(sort_key);
+        horizontalLayout->addWidget(sort_key);
 
-        sort_purchases = new QPushButton(verticalLayoutWidget_2);
+        sort_purchases = new QPushButton(horizontalLayoutWidget);
         sort_purchases->setObjectName(QStringLiteral("sort_purchases"));
-        sort_purchases->setFont(font9);
+        sort_purchases->setFont(font);
 
-        verticalLayout_2->addWidget(sort_purchases);
+        horizontalLayout->addWidget(sort_purchases);
 
-        SortByPampletRequest = new QPushButton(verticalLayoutWidget_2);
+        SortByPampletRequest = new QPushButton(horizontalLayoutWidget);
         SortByPampletRequest->setObjectName(QStringLiteral("SortByPampletRequest"));
-        SortByPampletRequest->setFont(font9);
+        SortByPampletRequest->setFont(font);
 
-        verticalLayout_2->addWidget(SortByPampletRequest);
+        horizontalLayout->addWidget(SortByPampletRequest);
 
         AdminWidget->addWidget(listings);
         addCustomer = new QWidget();
@@ -1734,7 +1733,7 @@ public:
         customerDelete->setObjectName(QStringLiteral("customerDelete"));
         table_search = new QTableView(customerDelete);
         table_search->setObjectName(QStringLiteral("table_search"));
-        table_search->setGeometry(QRect(90, 110, 551, 61));
+        table_search->setGeometry(QRect(60, 110, 681, 91));
         gridLayoutWidget_8 = new QWidget(customerDelete);
         gridLayoutWidget_8->setObjectName(QStringLiteral("gridLayoutWidget_8"));
         gridLayoutWidget_8->setGeometry(QRect(90, 20, 551, 31));
@@ -1921,10 +1920,10 @@ public:
         retranslateUi(MainInterface);
 
         tabWidget->setCurrentIndex(6);
-        HomeWidget->setCurrentIndex(4);
+        HomeWidget->setCurrentIndex(0);
         Review_Page->setCurrentIndex(1);
-        PaymentInformation->setCurrentIndex(2);
-        AdminWidget->setCurrentIndex(0);
+        PaymentInformation->setCurrentIndex(1);
+        AdminWidget->setCurrentIndex(4);
 
 
         QMetaObject::connectSlotsByName(MainInterface);
@@ -2133,7 +2132,7 @@ public:
         sort_name->setText(QApplication::translate("MainInterface", "Name", nullptr));
         sort_key->setText(QApplication::translate("MainInterface", "Key Clients", nullptr));
         sort_purchases->setText(QApplication::translate("MainInterface", "Purchases", nullptr));
-        SortByPampletRequest->setText(QApplication::translate("MainInterface", "Pamplet Reqest", nullptr));
+        SortByPampletRequest->setText(QApplication::translate("MainInterface", "Pamplet Request", nullptr));
         add->setText(QApplication::translate("MainInterface", "Add ", nullptr));
         pushButton_3->setText(QApplication::translate("MainInterface", "Back", nullptr));
         label_36->setText(QApplication::translate("MainInterface", "             Address:", nullptr));

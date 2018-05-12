@@ -297,7 +297,7 @@ void MainInterface::on_sort_key_clicked()
     QSqlQueryModel * model = new QSqlQueryModel();
     QSqlQuery query;
 
-    query.prepare("SELECT name,address,interest,rating,pamphlet FROM customers WHERE rating = 'key' ORDER BY name ASC");
+    query.prepare("SELECT Name,Address,Interest,Rating,Pamphlet FROM customers WHERE rating = 'Key' ORDER BY name ASC");
     query.exec();
 
     model->setQuery(query);
@@ -412,6 +412,9 @@ void MainInterface::on_search_customer_clicked()
 
     model->setQuery(query);
     ui->table_search->setModel(model);
+
+    ui->table_search->resizeColumnToContents(1);
+    ui->table_search->resizeRowsToContents();
 }
 
 void MainInterface::on_delete_customer_clicked()
@@ -581,7 +584,6 @@ void MainInterface::on_update_clicked()
        qDebug () << statemet;
        ui->search_status->setText("Update Failed");
    }
-
 
 }
 

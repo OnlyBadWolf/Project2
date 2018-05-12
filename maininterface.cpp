@@ -28,6 +28,9 @@ MainInterface::MainInterface(QWidget *parent) :
     // MAKE REVIEWS AVAILABLE
     makeReviewsAvailable();
 
+    // MAKE RATING AUTOMATICALLY 5
+    ui->rate_spinBox->setValue(5);
+
     // SETTING PLATINUM INFO
     ui->Platinum_textEdit->setText("JOSEPHDEFENDER Antivirus SAFE is a great collection of antivirus software tools, and while it's a bit more expensive than some of the other antivirus software on this best of list, the amount of features you get makes the cost worthwhile."
                                    "\n\nWith JOSEPHDEFENDER Antivirus SAFE, you get the brilliant antivirus software from JOSEPHDEFENDER, along with banking protection for safe online shopping, family safety tools and a device finder that lets you track your lost Android or iOS device, and if needs be remotely lock or delete it as well."
@@ -118,12 +121,32 @@ void MainInterface::on_buttonBox_accepted()
         QString name = ui->name_lineEdit->text();
         QString rating = ui->rate_spinBox->text();
         QString tier = ui->product_comboBox->currentText();
-        QString comment =  ui->comment->text();
+        QString retrieveComment =  ui->review_textEdit->toPlainText();
+        QString comment;
+        int count = 0;
+        int i = 0;
 
-        if (name == NULL || comment == NULL || tier == "Select Tier")
+        if (name == NULL || retrieveComment == NULL || tier == "Select Tier")
         {
             throw QString("Not an accepted");
         }
+
+        while (retrieveComment[count] != NULL)
+        {
+            if (count % 55 != 0)
+            {
+                comment[count + i] = retrieveComment[count];
+            }
+            else
+            {
+                comment.insert(count +i,'\n'); //[count + i] = "\n";
+            }
+
+            count++;
+
+            qDebug() << comment << endl;
+        }
+
 
         ui->Review_Page->setCurrentIndex(0);
 
@@ -136,6 +159,10 @@ void MainInterface::on_buttonBox_accepted()
         if(query.exec())
         {
             qDebug() << "comment success:";
+            ui->name_lineEdit->clear();
+            ui->rate_spinBox->setValue(5);
+            ui->product_comboBox->setCurrentIndex(0);
+            ui->review_textEdit->clear();
         }
         else
         {
@@ -160,6 +187,11 @@ void MainInterface::on_buttonBox_rejected()
 {
     // RETURN TO REVIEWS
     ui->Review_Page->setCurrentIndex(0);
+
+    ui->name_lineEdit->clear();
+    ui->rate_spinBox->setValue(5);
+    ui->product_comboBox->setCurrentIndex(0);
+    ui->review_textEdit->clear();
 }
 
 void MainInterface::on_BuyNowButton_clicked()
@@ -746,8 +778,10 @@ void MainInterface::makeReviewsAvailable()
 
 
     // RESIZE THE REVIEW TABLE
-    ui->tableReview->resizeColumnsToContents();
+   // ui->tableReview->setColumnWidth(3,470);
     ui->tableReview->resizeRowsToContents();
+    ui->tableReview->resizeColumnsToContents();
+    qDebug() << ui->tableReview->columnWidth(3);
 }
 
 void MainInterface::purchaseAmt(double qtySilver, double qtyGold, double qtyPlat)

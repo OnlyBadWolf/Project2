@@ -137,7 +137,7 @@ public:
     QLabel *label_25;
     QLineEdit *name_lineEdit;
     QLabel *label_24;
-    QLineEdit *comment;
+    QTextEdit *review_textEdit;
     QLabel *reviewStatus;
     QDialogButtonBox *buttonBox;
     QLabel *Company_label_6;
@@ -346,12 +346,14 @@ public:
     {
         if (MainInterface->objectName().isEmpty())
             MainInterface->setObjectName(QStringLiteral("MainInterface"));
-        MainInterface->resize(861, 564);
+        MainInterface->setEnabled(true);
+        MainInterface->resize(850, 564);
         QFont font;
         font.setFamily(QStringLiteral("Heiti SC"));
         font.setPointSize(16);
         MainInterface->setFont(font);
         MainInterface->setAnimated(true);
+        MainInterface->setTabShape(QTabWidget::Rounded);
         centralWidget = new QWidget(MainInterface);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         tabWidget = new QTabWidget(centralWidget);
@@ -859,6 +861,7 @@ public:
 
         name_lineEdit = new QLineEdit(formLayoutWidget);
         name_lineEdit->setObjectName(QStringLiteral("name_lineEdit"));
+        name_lineEdit->setMaxLength(25);
 
         formLayout->setWidget(2, QFormLayout::FieldRole, name_lineEdit);
 
@@ -868,10 +871,10 @@ public:
 
         formLayout->setWidget(3, QFormLayout::LabelRole, label_24);
 
-        comment = new QLineEdit(formLayoutWidget);
-        comment->setObjectName(QStringLiteral("comment"));
+        review_textEdit = new QTextEdit(formLayoutWidget);
+        review_textEdit->setObjectName(QStringLiteral("review_textEdit"));
 
-        formLayout->setWidget(3, QFormLayout::FieldRole, comment);
+        formLayout->setWidget(3, QFormLayout::FieldRole, review_textEdit);
 
         reviewStatus = new QLabel(WriteReview);
         reviewStatus->setObjectName(QStringLiteral("reviewStatus"));
@@ -1733,7 +1736,7 @@ public:
         customerDelete->setObjectName(QStringLiteral("customerDelete"));
         table_search = new QTableView(customerDelete);
         table_search->setObjectName(QStringLiteral("table_search"));
-        table_search->setGeometry(QRect(60, 110, 681, 91));
+        table_search->setGeometry(QRect(70, 110, 671, 91));
         gridLayoutWidget_8 = new QWidget(customerDelete);
         gridLayoutWidget_8->setObjectName(QStringLiteral("gridLayoutWidget_8"));
         gridLayoutWidget_8->setGeometry(QRect(90, 20, 551, 31));
@@ -1907,7 +1910,7 @@ public:
         MainInterface->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainInterface);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 861, 22));
+        menuBar->setGeometry(QRect(0, 0, 850, 22));
         MainInterface->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainInterface);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -1919,7 +1922,7 @@ public:
 
         retranslateUi(MainInterface);
 
-        tabWidget->setCurrentIndex(6);
+        tabWidget->setCurrentIndex(2);
         HomeWidget->setCurrentIndex(0);
         Review_Page->setCurrentIndex(1);
         PaymentInformation->setCurrentIndex(1);
@@ -2010,6 +2013,7 @@ public:
         label_25->setText(QApplication::translate("MainInterface", "Your Nickename:", nullptr));
         name_lineEdit->setPlaceholderText(QApplication::translate("MainInterface", "John Smith", nullptr));
         label_24->setText(QApplication::translate("MainInterface", "Write your review:", nullptr));
+        review_textEdit->setPlaceholderText(QApplication::translate("MainInterface", "Comment...", nullptr));
         reviewStatus->setText(QString());
         Company_label_6->setText(QApplication::translate("MainInterface", "DEFENDERS", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(Reviews), QApplication::translate("MainInterface", "Reviews", nullptr));

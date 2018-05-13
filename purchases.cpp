@@ -18,7 +18,7 @@ Purchases::Purchases(QString customerName, int silver, int gold, int plat, doubl
     subTotal = total;
 }
 
-QString Purchases::getName() const
+QString Purchases::getCustomerName() const
 {
     return name;
 }
@@ -41,4 +41,16 @@ int Purchases::getQtyPlat() const
 double Purchases::getSubTotal() const
 {
     return subTotal;
+}
+
+bool Purchases::operator==(const Purchases& compareName)
+{
+    return (name == compareName.name);
+}
+
+Purchases Purchases::operator-(double discount)
+{
+    Purchases subtractDiscount = *this;
+    subtractDiscount.subTotal = subtractDiscount.subTotal - discount;
+    return subtractDiscount;
 }

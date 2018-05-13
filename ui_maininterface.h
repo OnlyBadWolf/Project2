@@ -159,7 +159,6 @@ public:
     QLabel *Platinum_label_2;
     QLabel *sliverDescription2;
     QLabel *gold_label;
-    QLabel *GoldPrice_label;
     QSpinBox *gold_spinBox;
     QLabel *sliverDescription3;
     QSpinBox *silver_spinBox;
@@ -168,40 +167,31 @@ public:
     QLabel *goldDescription2;
     QLabel *PlatinumPrice_label_2;
     QLabel *goldDescription3;
+    QLabel *GoldPrice_label;
     QPushButton *BuyNowButton;
     QWidget *Confirmation;
     QPushButton *BackButton;
     QFrame *frame_7;
-    QWidget *gridLayoutWidget_16;
-    QGridLayout *gridLayout_15;
-    QLineEdit *lineEdit_57;
-    QComboBox *comboBox_20;
-    QComboBox *comboBox_21;
-    QLineEdit *lineEdit_58;
-    QLineEdit *lineEdit_59;
-    QLineEdit *lineEdit_60;
-    QLineEdit *lineEdit_61;
-    QLineEdit *lineEdit_62;
     QWidget *gridLayoutWidget_17;
     QGridLayout *gridLayout_16;
-    QLabel *label_55;
-    QLabel *label_56;
-    QLabel *totalAmount_2;
-    QLabel *label_60;
-    QLabel *salesTax_2;
-    QLabel *label_59;
-    QLabel *label_51;
     QLabel *goldQtyPurchased;
-    QSpacerItem *verticalSpacer_11;
+    QLabel *label_56;
+    QLabel *label_59;
+    QLabel *totalAmount_2;
+    QLabel *salesTax_2;
+    QLabel *label_61;
+    QLabel *label_60;
     QLabel *label_58;
     QLabel *label_57;
-    QLabel *label_61;
     QLabel *subtotal_2;
-    QLabel *silverQtyPurchased;
-    QLabel *label_53;
+    QLabel *label_54;
     QLabel *PlatinumQtyPurchased;
     QLabel *label_62;
-    QLabel *label_54;
+    QLabel *silverQtyPurchased;
+    QSpacerItem *verticalSpacer_11;
+    QLabel *label_51;
+    QLabel *label_55;
+    QLabel *label_53;
     QLabel *aboutUs_label_3;
     QWidget *BillingInfo;
     QFrame *frame_3;
@@ -763,7 +753,7 @@ public:
         billAddress_label_2->setFont(font13);
         verticalLayoutWidget_7 = new QWidget(Pamphlet);
         verticalLayoutWidget_7->setObjectName(QStringLiteral("verticalLayoutWidget_7"));
-        verticalLayoutWidget_7->setGeometry(QRect(560, 330, 160, 61));
+        verticalLayoutWidget_7->setGeometry(QRect(560, 330, 160, 70));
         verticalLayout_7 = new QVBoxLayout(verticalLayoutWidget_7);
         verticalLayout_7->setSpacing(6);
         verticalLayout_7->setContentsMargins(11, 11, 11, 11);
@@ -877,7 +867,7 @@ public:
 
         name_lineEdit = new QLineEdit(formLayoutWidget);
         name_lineEdit->setObjectName(QStringLiteral("name_lineEdit"));
-        name_lineEdit->setMaxLength(25);
+        name_lineEdit->setMaxLength(19);
 
         formLayout->setWidget(2, QFormLayout::FieldRole, name_lineEdit);
 
@@ -920,7 +910,7 @@ public:
         Frame1->setFrameShadow(QFrame::Raised);
         gridLayoutWidget_2 = new QWidget(Frame1);
         gridLayoutWidget_2->setObjectName(QStringLiteral("gridLayoutWidget_2"));
-        gridLayoutWidget_2->setGeometry(QRect(20, 20, 731, 321));
+        gridLayoutWidget_2->setGeometry(QRect(20, 20, 852, 321));
         WhatToPurchase = new QGridLayout(gridLayoutWidget_2);
         WhatToPurchase->setSpacing(6);
         WhatToPurchase->setContentsMargins(11, 11, 11, 11);
@@ -930,141 +920,141 @@ public:
         WhatToPurchase->setContentsMargins(0, 0, 0, 0);
         goldDescription1 = new QLabel(gridLayoutWidget_2);
         goldDescription1->setObjectName(QStringLiteral("goldDescription1"));
-        QFont font15;
-        font15.setPointSize(12);
-        goldDescription1->setFont(font15);
+        goldDescription1->setFont(font11);
 
         WhatToPurchase->addWidget(goldDescription1, 6, 2, 1, 1);
 
         PlatinumDescription2 = new QLabel(gridLayoutWidget_2);
         PlatinumDescription2->setObjectName(QStringLiteral("PlatinumDescription2"));
-        PlatinumDescription2->setFont(font15);
+        PlatinumDescription2->setFont(font11);
 
         WhatToPurchase->addWidget(PlatinumDescription2, 11, 2, 1, 1);
 
         Silver_label_2 = new QLabel(gridLayoutWidget_2);
         Silver_label_2->setObjectName(QStringLiteral("Silver_label_2"));
-        QFont font16;
-        font16.setFamily(QStringLiteral("Heiti SC"));
-        font16.setBold(true);
-        font16.setWeight(75);
-        Silver_label_2->setFont(font16);
+        Silver_label_2->setFont(font6);
 
         WhatToPurchase->addWidget(Silver_label_2, 1, 2, 1, 1);
 
         product_label = new QLabel(gridLayoutWidget_2);
         product_label->setObjectName(QStringLiteral("product_label"));
-        QFont font17;
-        font17.setFamily(QStringLiteral("Heiti SC"));
-        font17.setPointSize(15);
-        font17.setBold(true);
-        font17.setWeight(75);
-        product_label->setFont(font17);
+        QFont font15;
+        font15.setFamily(QStringLiteral("Heiti SC"));
+        font15.setPointSize(18);
+        font15.setBold(true);
+        font15.setWeight(75);
+        product_label->setFont(font15);
 
         WhatToPurchase->addWidget(product_label, 0, 2, 1, 1);
 
         PlatinumDescription1 = new QLabel(gridLayoutWidget_2);
         PlatinumDescription1->setObjectName(QStringLiteral("PlatinumDescription1"));
-        PlatinumDescription1->setFont(font15);
+        PlatinumDescription1->setFont(font11);
 
         WhatToPurchase->addWidget(PlatinumDescription1, 10, 2, 1, 1);
 
         silverPrice_label = new QLabel(gridLayoutWidget_2);
         silverPrice_label->setObjectName(QStringLiteral("silverPrice_label"));
-        QFont font18;
-        font18.setFamily(QStringLiteral("Heiti SC"));
-        font18.setBold(false);
-        font18.setWeight(50);
-        silverPrice_label->setFont(font18);
+        QFont font16;
+        font16.setFamily(QStringLiteral("Heiti SC"));
+        font16.setPointSize(15);
+        font16.setBold(false);
+        font16.setWeight(50);
+        silverPrice_label->setFont(font16);
 
         WhatToPurchase->addWidget(silverPrice_label, 1, 1, 1, 1);
 
         PlatinumDescription3 = new QLabel(gridLayoutWidget_2);
         PlatinumDescription3->setObjectName(QStringLiteral("PlatinumDescription3"));
-        PlatinumDescription3->setFont(font15);
+        PlatinumDescription3->setFont(font11);
 
         WhatToPurchase->addWidget(PlatinumDescription3, 12, 2, 1, 1);
 
         platinum_spinBox = new QSpinBox(gridLayoutWidget_2);
         platinum_spinBox->setObjectName(QStringLiteral("platinum_spinBox"));
+        QFont font17;
+        font17.setPointSize(15);
+        platinum_spinBox->setFont(font17);
 
         WhatToPurchase->addWidget(platinum_spinBox, 9, 0, 1, 1);
 
         price_label = new QLabel(gridLayoutWidget_2);
         price_label->setObjectName(QStringLiteral("price_label"));
-        price_label->setFont(font17);
+        price_label->setFont(font15);
 
         WhatToPurchase->addWidget(price_label, 0, 1, 1, 1);
 
         Platinum_label_2 = new QLabel(gridLayoutWidget_2);
         Platinum_label_2->setObjectName(QStringLiteral("Platinum_label_2"));
-        Platinum_label_2->setFont(font16);
+        Platinum_label_2->setFont(font6);
 
         WhatToPurchase->addWidget(Platinum_label_2, 9, 2, 1, 1);
 
         sliverDescription2 = new QLabel(gridLayoutWidget_2);
         sliverDescription2->setObjectName(QStringLiteral("sliverDescription2"));
-        sliverDescription2->setFont(font15);
+        sliverDescription2->setFont(font11);
 
         WhatToPurchase->addWidget(sliverDescription2, 3, 2, 1, 1);
 
         gold_label = new QLabel(gridLayoutWidget_2);
         gold_label->setObjectName(QStringLiteral("gold_label"));
-        gold_label->setFont(font16);
+        gold_label->setFont(font6);
 
         WhatToPurchase->addWidget(gold_label, 5, 2, 1, 1);
 
-        GoldPrice_label = new QLabel(gridLayoutWidget_2);
-        GoldPrice_label->setObjectName(QStringLiteral("GoldPrice_label"));
-        GoldPrice_label->setFont(font18);
-
-        WhatToPurchase->addWidget(GoldPrice_label, 5, 1, 1, 1);
-
         gold_spinBox = new QSpinBox(gridLayoutWidget_2);
         gold_spinBox->setObjectName(QStringLiteral("gold_spinBox"));
+        gold_spinBox->setFont(font17);
 
         WhatToPurchase->addWidget(gold_spinBox, 5, 0, 1, 1);
 
         sliverDescription3 = new QLabel(gridLayoutWidget_2);
         sliverDescription3->setObjectName(QStringLiteral("sliverDescription3"));
-        sliverDescription3->setFont(font15);
+        sliverDescription3->setFont(font11);
 
         WhatToPurchase->addWidget(sliverDescription3, 4, 2, 1, 1);
 
         silver_spinBox = new QSpinBox(gridLayoutWidget_2);
         silver_spinBox->setObjectName(QStringLiteral("silver_spinBox"));
+        silver_spinBox->setFont(font17);
 
         WhatToPurchase->addWidget(silver_spinBox, 1, 0, 1, 1);
 
         qty_label = new QLabel(gridLayoutWidget_2);
         qty_label->setObjectName(QStringLiteral("qty_label"));
-        qty_label->setFont(font17);
+        qty_label->setFont(font15);
 
         WhatToPurchase->addWidget(qty_label, 0, 0, 1, 1);
 
         sliverDescription1 = new QLabel(gridLayoutWidget_2);
         sliverDescription1->setObjectName(QStringLiteral("sliverDescription1"));
-        sliverDescription1->setFont(font15);
+        sliverDescription1->setFont(font11);
 
         WhatToPurchase->addWidget(sliverDescription1, 2, 2, 1, 1);
 
         goldDescription2 = new QLabel(gridLayoutWidget_2);
         goldDescription2->setObjectName(QStringLiteral("goldDescription2"));
-        goldDescription2->setFont(font15);
+        goldDescription2->setFont(font11);
 
         WhatToPurchase->addWidget(goldDescription2, 7, 2, 1, 1);
 
         PlatinumPrice_label_2 = new QLabel(gridLayoutWidget_2);
         PlatinumPrice_label_2->setObjectName(QStringLiteral("PlatinumPrice_label_2"));
-        PlatinumPrice_label_2->setFont(font18);
+        PlatinumPrice_label_2->setFont(font16);
 
         WhatToPurchase->addWidget(PlatinumPrice_label_2, 9, 1, 1, 1);
 
         goldDescription3 = new QLabel(gridLayoutWidget_2);
         goldDescription3->setObjectName(QStringLiteral("goldDescription3"));
-        goldDescription3->setFont(font15);
+        goldDescription3->setFont(font11);
 
         WhatToPurchase->addWidget(goldDescription3, 8, 2, 1, 1);
+
+        GoldPrice_label = new QLabel(gridLayoutWidget_2);
+        GoldPrice_label->setObjectName(QStringLiteral("GoldPrice_label"));
+        GoldPrice_label->setFont(font16);
+
+        WhatToPurchase->addWidget(GoldPrice_label, 5, 1, 1, 1);
 
         WhatToPurchase->setColumnStretch(2, 2);
         BuyNowButton = new QPushButton(ChoosingProduct);
@@ -1076,63 +1066,13 @@ public:
         Confirmation->setObjectName(QStringLiteral("Confirmation"));
         BackButton = new QPushButton(Confirmation);
         BackButton->setObjectName(QStringLiteral("BackButton"));
-        BackButton->setGeometry(QRect(510, 320, 220, 28));
+        BackButton->setGeometry(QRect(520, 370, 220, 28));
         BackButton->setFont(font11);
         frame_7 = new QFrame(Confirmation);
         frame_7->setObjectName(QStringLiteral("frame_7"));
         frame_7->setGeometry(QRect(40, 40, 711, 261));
         frame_7->setFrameShape(QFrame::StyledPanel);
         frame_7->setFrameShadow(QFrame::Raised);
-        gridLayoutWidget_16 = new QWidget(frame_7);
-        gridLayoutWidget_16->setObjectName(QStringLiteral("gridLayoutWidget_16"));
-        gridLayoutWidget_16->setGeometry(QRect(460, 280, 421, 181));
-        gridLayout_15 = new QGridLayout(gridLayoutWidget_16);
-        gridLayout_15->setSpacing(6);
-        gridLayout_15->setContentsMargins(11, 11, 11, 11);
-        gridLayout_15->setObjectName(QStringLiteral("gridLayout_15"));
-        gridLayout_15->setContentsMargins(0, 0, 0, 0);
-        lineEdit_57 = new QLineEdit(gridLayoutWidget_16);
-        lineEdit_57->setObjectName(QStringLiteral("lineEdit_57"));
-
-        gridLayout_15->addWidget(lineEdit_57, 1, 0, 1, 1);
-
-        comboBox_20 = new QComboBox(gridLayoutWidget_16);
-        comboBox_20->addItem(QString());
-        comboBox_20->setObjectName(QStringLiteral("comboBox_20"));
-
-        gridLayout_15->addWidget(comboBox_20, 3, 0, 1, 1);
-
-        comboBox_21 = new QComboBox(gridLayoutWidget_16);
-        comboBox_21->addItem(QString());
-        comboBox_21->setObjectName(QStringLiteral("comboBox_21"));
-
-        gridLayout_15->addWidget(comboBox_21, 3, 1, 1, 1);
-
-        lineEdit_58 = new QLineEdit(gridLayoutWidget_16);
-        lineEdit_58->setObjectName(QStringLiteral("lineEdit_58"));
-
-        gridLayout_15->addWidget(lineEdit_58, 1, 1, 1, 1);
-
-        lineEdit_59 = new QLineEdit(gridLayoutWidget_16);
-        lineEdit_59->setObjectName(QStringLiteral("lineEdit_59"));
-
-        gridLayout_15->addWidget(lineEdit_59, 4, 0, 1, 1);
-
-        lineEdit_60 = new QLineEdit(gridLayoutWidget_16);
-        lineEdit_60->setObjectName(QStringLiteral("lineEdit_60"));
-
-        gridLayout_15->addWidget(lineEdit_60, 4, 1, 1, 1);
-
-        lineEdit_61 = new QLineEdit(gridLayoutWidget_16);
-        lineEdit_61->setObjectName(QStringLiteral("lineEdit_61"));
-
-        gridLayout_15->addWidget(lineEdit_61, 0, 0, 1, 2);
-
-        lineEdit_62 = new QLineEdit(gridLayoutWidget_16);
-        lineEdit_62->setObjectName(QStringLiteral("lineEdit_62"));
-
-        gridLayout_15->addWidget(lineEdit_62, 2, 0, 1, 2);
-
         gridLayoutWidget_17 = new QWidget(frame_7);
         gridLayoutWidget_17->setObjectName(QStringLiteral("gridLayoutWidget_17"));
         gridLayoutWidget_17->setGeometry(QRect(20, 20, 671, 221));
@@ -1141,16 +1081,11 @@ public:
         gridLayout_16->setContentsMargins(11, 11, 11, 11);
         gridLayout_16->setObjectName(QStringLiteral("gridLayout_16"));
         gridLayout_16->setContentsMargins(0, 0, 0, 0);
-        label_55 = new QLabel(gridLayoutWidget_17);
-        label_55->setObjectName(QStringLiteral("label_55"));
-        QFont font19;
-        font19.setFamily(QStringLiteral("Heiti SC"));
-        font19.setPointSize(14);
-        font19.setBold(true);
-        font19.setWeight(75);
-        label_55->setFont(font19);
+        goldQtyPurchased = new QLabel(gridLayoutWidget_17);
+        goldQtyPurchased->setObjectName(QStringLiteral("goldQtyPurchased"));
+        goldQtyPurchased->setFont(font11);
 
-        gridLayout_16->addWidget(label_55, 6, 0, 1, 1);
+        gridLayout_16->addWidget(goldQtyPurchased, 2, 1, 1, 1);
 
         label_56 = new QLabel(gridLayoutWidget_17);
         label_56->setObjectName(QStringLiteral("label_56"));
@@ -1158,17 +1093,17 @@ public:
 
         gridLayout_16->addWidget(label_56, 3, 2, 1, 1);
 
+        label_59 = new QLabel(gridLayoutWidget_17);
+        label_59->setObjectName(QStringLiteral("label_59"));
+        label_59->setFont(font11);
+
+        gridLayout_16->addWidget(label_59, 2, 2, 1, 1);
+
         totalAmount_2 = new QLabel(gridLayoutWidget_17);
         totalAmount_2->setObjectName(QStringLiteral("totalAmount_2"));
         totalAmount_2->setFont(font11);
 
         gridLayout_16->addWidget(totalAmount_2, 7, 2, 1, 1);
-
-        label_60 = new QLabel(gridLayoutWidget_17);
-        label_60->setObjectName(QStringLiteral("label_60"));
-        label_60->setFont(font11);
-
-        gridLayout_16->addWidget(label_60, 1, 0, 1, 1);
 
         salesTax_2 = new QLabel(gridLayoutWidget_17);
         salesTax_2->setObjectName(QStringLiteral("salesTax_2"));
@@ -1176,31 +1111,26 @@ public:
 
         gridLayout_16->addWidget(salesTax_2, 6, 2, 1, 1);
 
-        label_59 = new QLabel(gridLayoutWidget_17);
-        label_59->setObjectName(QStringLiteral("label_59"));
-        label_59->setFont(font11);
+        label_61 = new QLabel(gridLayoutWidget_17);
+        label_61->setObjectName(QStringLiteral("label_61"));
+        label_61->setFont(font11);
 
-        gridLayout_16->addWidget(label_59, 2, 2, 1, 1);
+        gridLayout_16->addWidget(label_61, 2, 0, 1, 1);
 
-        label_51 = new QLabel(gridLayoutWidget_17);
-        label_51->setObjectName(QStringLiteral("label_51"));
-        label_51->setFont(font19);
+        label_60 = new QLabel(gridLayoutWidget_17);
+        label_60->setObjectName(QStringLiteral("label_60"));
+        label_60->setFont(font11);
 
-        gridLayout_16->addWidget(label_51, 5, 0, 1, 1);
-
-        goldQtyPurchased = new QLabel(gridLayoutWidget_17);
-        goldQtyPurchased->setObjectName(QStringLiteral("goldQtyPurchased"));
-        goldQtyPurchased->setFont(font11);
-
-        gridLayout_16->addWidget(goldQtyPurchased, 2, 1, 1, 1);
-
-        verticalSpacer_11 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        gridLayout_16->addItem(verticalSpacer_11, 4, 1, 1, 1);
+        gridLayout_16->addWidget(label_60, 1, 0, 1, 1);
 
         label_58 = new QLabel(gridLayoutWidget_17);
         label_58->setObjectName(QStringLiteral("label_58"));
-        label_58->setFont(font19);
+        QFont font18;
+        font18.setFamily(QStringLiteral("Heiti SC"));
+        font18.setPointSize(14);
+        font18.setBold(true);
+        font18.setWeight(75);
+        label_58->setFont(font18);
 
         gridLayout_16->addWidget(label_58, 0, 1, 1, 1);
 
@@ -1210,29 +1140,17 @@ public:
 
         gridLayout_16->addWidget(label_57, 1, 2, 1, 1);
 
-        label_61 = new QLabel(gridLayoutWidget_17);
-        label_61->setObjectName(QStringLiteral("label_61"));
-        label_61->setFont(font11);
-
-        gridLayout_16->addWidget(label_61, 2, 0, 1, 1);
-
         subtotal_2 = new QLabel(gridLayoutWidget_17);
         subtotal_2->setObjectName(QStringLiteral("subtotal_2"));
         subtotal_2->setFont(font11);
 
         gridLayout_16->addWidget(subtotal_2, 5, 2, 1, 1);
 
-        silverQtyPurchased = new QLabel(gridLayoutWidget_17);
-        silverQtyPurchased->setObjectName(QStringLiteral("silverQtyPurchased"));
-        silverQtyPurchased->setFont(font11);
+        label_54 = new QLabel(gridLayoutWidget_17);
+        label_54->setObjectName(QStringLiteral("label_54"));
+        label_54->setFont(font18);
 
-        gridLayout_16->addWidget(silverQtyPurchased, 1, 1, 1, 1);
-
-        label_53 = new QLabel(gridLayoutWidget_17);
-        label_53->setObjectName(QStringLiteral("label_53"));
-        label_53->setFont(font19);
-
-        gridLayout_16->addWidget(label_53, 7, 0, 1, 1);
+        gridLayout_16->addWidget(label_54, 0, 2, 1, 1);
 
         PlatinumQtyPurchased = new QLabel(gridLayoutWidget_17);
         PlatinumQtyPurchased->setObjectName(QStringLiteral("PlatinumQtyPurchased"));
@@ -1246,11 +1164,33 @@ public:
 
         gridLayout_16->addWidget(label_62, 3, 0, 1, 1);
 
-        label_54 = new QLabel(gridLayoutWidget_17);
-        label_54->setObjectName(QStringLiteral("label_54"));
-        label_54->setFont(font19);
+        silverQtyPurchased = new QLabel(gridLayoutWidget_17);
+        silverQtyPurchased->setObjectName(QStringLiteral("silverQtyPurchased"));
+        silverQtyPurchased->setFont(font11);
 
-        gridLayout_16->addWidget(label_54, 0, 2, 1, 1);
+        gridLayout_16->addWidget(silverQtyPurchased, 1, 1, 1, 1);
+
+        verticalSpacer_11 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout_16->addItem(verticalSpacer_11, 4, 1, 1, 1);
+
+        label_51 = new QLabel(gridLayoutWidget_17);
+        label_51->setObjectName(QStringLiteral("label_51"));
+        label_51->setFont(font18);
+
+        gridLayout_16->addWidget(label_51, 5, 1, 1, 1);
+
+        label_55 = new QLabel(gridLayoutWidget_17);
+        label_55->setObjectName(QStringLiteral("label_55"));
+        label_55->setFont(font18);
+
+        gridLayout_16->addWidget(label_55, 6, 1, 1, 1);
+
+        label_53 = new QLabel(gridLayoutWidget_17);
+        label_53->setObjectName(QStringLiteral("label_53"));
+        label_53->setFont(font18);
+
+        gridLayout_16->addWidget(label_53, 7, 1, 1, 1);
 
         aboutUs_label_3 = new QLabel(Confirmation);
         aboutUs_label_3->setObjectName(QStringLiteral("aboutUs_label_3"));
@@ -1448,6 +1388,7 @@ public:
         cardNumeber_lineEdit = new QLineEdit(gridLayoutWidget_7);
         cardNumeber_lineEdit->setObjectName(QStringLiteral("cardNumeber_lineEdit"));
         cardNumeber_lineEdit->setInputMethodHints(Qt::ImhDigitsOnly|Qt::ImhPreferNumbers);
+        cardNumeber_lineEdit->setMaxLength(12);
         cardNumeber_lineEdit->setClearButtonEnabled(true);
 
         gridLayout_8->addWidget(cardNumeber_lineEdit, 0, 0, 1, 2);
@@ -1455,6 +1396,7 @@ public:
         securityCode_lineEdit = new QLineEdit(gridLayoutWidget_7);
         securityCode_lineEdit->setObjectName(QStringLiteral("securityCode_lineEdit"));
         securityCode_lineEdit->setInputMethodHints(Qt::ImhDigitsOnly|Qt::ImhHiddenText|Qt::ImhNoPredictiveText|Qt::ImhPreferNumbers);
+        securityCode_lineEdit->setMaxLength(3);
         securityCode_lineEdit->setClearButtonEnabled(true);
 
         gridLayout_8->addWidget(securityCode_lineEdit, 2, 1, 1, 1);
@@ -1542,7 +1484,7 @@ public:
 
         gridLayoutWidget_15 = new QWidget(frame_5);
         gridLayoutWidget_15->setObjectName(QStringLiteral("gridLayoutWidget_15"));
-        gridLayoutWidget_15->setGeometry(QRect(10, 10, 385, 217));
+        gridLayoutWidget_15->setGeometry(QRect(10, 10, 381, 217));
         gridLayout_14 = new QGridLayout(gridLayoutWidget_15);
         gridLayout_14->setSpacing(6);
         gridLayout_14->setContentsMargins(11, 11, 11, 11);
@@ -1584,7 +1526,7 @@ public:
 
         label_26 = new QLabel(gridLayoutWidget_15);
         label_26->setObjectName(QStringLiteral("label_26"));
-        label_26->setFont(font19);
+        label_26->setFont(font18);
 
         gridLayout_14->addWidget(label_26, 0, 0, 1, 1);
 
@@ -1596,7 +1538,7 @@ public:
 
         label_42 = new QLabel(gridLayoutWidget_15);
         label_42->setObjectName(QStringLiteral("label_42"));
-        label_42->setFont(font19);
+        label_42->setFont(font18);
 
         gridLayout_14->addWidget(label_42, 0, 3, 1, 1);
 
@@ -1623,7 +1565,7 @@ public:
 
         label_43 = new QLabel(gridLayoutWidget_15);
         label_43->setObjectName(QStringLiteral("label_43"));
-        label_43->setFont(font19);
+        label_43->setFont(font18);
 
         gridLayout_14->addWidget(label_43, 0, 2, 1, 1);
 
@@ -1634,22 +1576,22 @@ public:
 
         label_45 = new QLabel(gridLayoutWidget_15);
         label_45->setObjectName(QStringLiteral("label_45"));
-        QFont font20;
-        font20.setFamily(QStringLiteral("Heiti SC"));
-        font20.setPointSize(12);
-        label_45->setFont(font20);
+        QFont font19;
+        font19.setFamily(QStringLiteral("Heiti SC"));
+        font19.setPointSize(12);
+        label_45->setFont(font19);
 
         gridLayout_14->addWidget(label_45, 1, 1, 1, 1);
 
         label_46 = new QLabel(gridLayoutWidget_15);
         label_46->setObjectName(QStringLiteral("label_46"));
-        label_46->setFont(font20);
+        label_46->setFont(font19);
 
         gridLayout_14->addWidget(label_46, 3, 1, 1, 1);
 
         label_47 = new QLabel(gridLayoutWidget_15);
         label_47->setObjectName(QStringLiteral("label_47"));
-        label_47->setFont(font20);
+        label_47->setFont(font19);
 
         gridLayout_14->addWidget(label_47, 4, 1, 1, 1);
 
@@ -1770,10 +1712,10 @@ public:
         pushButton_5 = new QPushButton(Options);
         pushButton_5->setObjectName(QStringLiteral("pushButton_5"));
         pushButton_5->setGeometry(QRect(420, 220, 221, 81));
-        QFont font21;
-        font21.setFamily(QStringLiteral("Heiti TC"));
-        font21.setPointSize(16);
-        pushButton_5->setFont(font21);
+        QFont font20;
+        font20.setFamily(QStringLiteral("Heiti TC"));
+        font20.setPointSize(16);
+        pushButton_5->setFont(font20);
         pushButton_7 = new QPushButton(Options);
         pushButton_7->setObjectName(QStringLiteral("pushButton_7"));
         pushButton_7->setGeometry(QRect(420, 70, 221, 81));
@@ -1793,16 +1735,16 @@ public:
         SortBy_label->setObjectName(QStringLiteral("SortBy_label"));
         SortBy_label->setEnabled(true);
         SortBy_label->setGeometry(QRect(30, 290, 146, 15));
-        QFont font22;
-        font22.setFamily(QStringLiteral("Heiti SC"));
-        font22.setPointSize(15);
-        font22.setBold(true);
-        font22.setWeight(75);
-        font22.setKerning(true);
-        SortBy_label->setFont(font22);
+        QFont font21;
+        font21.setFamily(QStringLiteral("Heiti SC"));
+        font21.setPointSize(15);
+        font21.setBold(true);
+        font21.setWeight(75);
+        font21.setKerning(true);
+        SortBy_label->setFont(font21);
         horizontalLayoutWidget = new QWidget(listings);
         horizontalLayoutWidget->setObjectName(QStringLiteral("horizontalLayoutWidget"));
-        horizontalLayoutWidget->setGeometry(QRect(40, 310, 518, 32));
+        horizontalLayoutWidget->setGeometry(QRect(40, 310, 518, 35));
         horizontalLayout = new QHBoxLayout(horizontalLayoutWidget);
         horizontalLayout->setSpacing(6);
         horizontalLayout->setContentsMargins(11, 11, 11, 11);
@@ -1875,10 +1817,10 @@ public:
 
         label_37 = new QLabel(gridLayoutWidget_3);
         label_37->setObjectName(QStringLiteral("label_37"));
-        QFont font23;
-        font23.setFamily(QStringLiteral("Heiti SC"));
-        font23.setPointSize(10);
-        label_37->setFont(font23);
+        QFont font22;
+        font22.setFamily(QStringLiteral("Heiti SC"));
+        font22.setPointSize(10);
+        label_37->setFont(font22);
 
         gridLayout->addWidget(label_37, 10, 0, 1, 1);
 
@@ -1901,7 +1843,7 @@ public:
 
         label_38 = new QLabel(gridLayoutWidget_3);
         label_38->setObjectName(QStringLiteral("label_38"));
-        label_38->setFont(font23);
+        label_38->setFont(font22);
 
         gridLayout->addWidget(label_38, 1, 0, 1, 1);
 
@@ -2028,7 +1970,7 @@ public:
         label_39 = new QLabel(customerDelete);
         label_39->setObjectName(QStringLiteral("label_39"));
         label_39->setGeometry(QRect(90, 50, 233, 10));
-        label_39->setFont(font23);
+        label_39->setFont(font22);
         AdminWidget->addWidget(customerDelete);
         updateCustomer = new QWidget();
         updateCustomer->setObjectName(QStringLiteral("updateCustomer"));
@@ -2158,11 +2100,11 @@ public:
 
         retranslateUi(MainInterface);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(3);
         HomeWidget->setCurrentIndex(0);
         Review_Page->setCurrentIndex(1);
-        PaymentInformation->setCurrentIndex(2);
-        AdminWidget->setCurrentIndex(4);
+        PaymentInformation->setCurrentIndex(1);
+        AdminWidget->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(MainInterface);
@@ -2242,9 +2184,9 @@ public:
         WriteReviewButton->setText(QApplication::translate("MainInterface", "Write A Review", nullptr));
         label_22->setText(QApplication::translate("MainInterface", "Product Reviewed:", nullptr));
         product_comboBox->setItemText(0, QApplication::translate("MainInterface", "Select Tier", nullptr));
-        product_comboBox->setItemText(1, QApplication::translate("MainInterface", "Silver", nullptr));
-        product_comboBox->setItemText(2, QApplication::translate("MainInterface", "Gold", nullptr));
-        product_comboBox->setItemText(3, QApplication::translate("MainInterface", "Platinum", nullptr));
+        product_comboBox->setItemText(1, QApplication::translate("MainInterface", "MORGANDEFENDER", nullptr));
+        product_comboBox->setItemText(2, QApplication::translate("MainInterface", "NAVIDDEFENDER", nullptr));
+        product_comboBox->setItemText(3, QApplication::translate("MainInterface", "JOSEPHDEFENDER", nullptr));
 
         label_23->setText(QApplication::translate("MainInterface", "How would you rate this product?", nullptr));
         label_25->setText(QApplication::translate("MainInterface", "Your Nickename:", nullptr));
@@ -2254,56 +2196,43 @@ public:
         reviewStatus->setText(QString());
         Company_label_6->setText(QApplication::translate("MainInterface", "ICyberSecurity", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(Reviews), QApplication::translate("MainInterface", "Reviews", nullptr));
-        goldDescription1->setText(QApplication::translate("MainInterface", "      >>", nullptr));
-        PlatinumDescription2->setText(QApplication::translate("MainInterface", "      >>", nullptr));
-        Silver_label_2->setText(QApplication::translate("MainInterface", "Silver", nullptr));
-        product_label->setText(QApplication::translate("MainInterface", "Product Description", nullptr));
-        PlatinumDescription1->setText(QApplication::translate("MainInterface", "      >>", nullptr));
+        goldDescription1->setText(QApplication::translate("MainInterface", "      >> Everything offered in MORGANDEFENDER", nullptr));
+        PlatinumDescription2->setText(QApplication::translate("MainInterface", "      >> Lets you track your lost Android or iOS device", nullptr));
+        Silver_label_2->setText(QApplication::translate("MainInterface", "MORGANDEFENDER", nullptr));
+        product_label->setText(QApplication::translate("MainInterface", "Product Description:", nullptr));
+        PlatinumDescription1->setText(QApplication::translate("MainInterface", "      >> Everything offered in NAVIDDEFENDER", nullptr));
         silverPrice_label->setText(QApplication::translate("MainInterface", "$29.99", nullptr));
-        PlatinumDescription3->setText(QApplication::translate("MainInterface", "      >>", nullptr));
-        price_label->setText(QApplication::translate("MainInterface", "Price per Device", nullptr));
-        Platinum_label_2->setText(QApplication::translate("MainInterface", "Platinum", nullptr));
-        sliverDescription2->setText(QApplication::translate("MainInterface", "      >>", nullptr));
-        gold_label->setText(QApplication::translate("MainInterface", "Gold", nullptr));
-        GoldPrice_label->setText(QApplication::translate("MainInterface", "$49.99", nullptr));
-        sliverDescription3->setText(QApplication::translate("MainInterface", "      >>", nullptr));
-        qty_label->setText(QApplication::translate("MainInterface", "Qty.", nullptr));
-        sliverDescription1->setText(QApplication::translate("MainInterface", "      >>", nullptr));
-        goldDescription2->setText(QApplication::translate("MainInterface", "      >>", nullptr));
+        PlatinumDescription3->setText(QApplication::translate("MainInterface", "      >> Able to run alongside many other security tools without conflict", nullptr));
+        price_label->setText(QApplication::translate("MainInterface", "Price per Device:", nullptr));
+        Platinum_label_2->setText(QApplication::translate("MainInterface", "JOSEPHDEFENDER", nullptr));
+        sliverDescription2->setText(QApplication::translate("MainInterface", "      >>  Anti-spam, file encryption, and anti-theft features", nullptr));
+        gold_label->setText(QApplication::translate("MainInterface", "NAVIDDEFENDER", nullptr));
+        sliverDescription3->setText(QApplication::translate("MainInterface", "      >>  Covers up to five PCs, Macs, and Android devices", nullptr));
+        qty_label->setText(QApplication::translate("MainInterface", "Qty.:", nullptr));
+        sliverDescription1->setText(QApplication::translate("MainInterface", "      >>  Web filtering blocks access to malicious sites", nullptr));
+        goldDescription2->setText(QApplication::translate("MainInterface", "      >> Real-time malware protection", nullptr));
         PlatinumPrice_label_2->setText(QApplication::translate("MainInterface", "$69.99", nullptr));
-        goldDescription3->setText(QApplication::translate("MainInterface", "      >>", nullptr));
+        goldDescription3->setText(QApplication::translate("MainInterface", "      >> Modules prevents attacks using PowerShell and malicious scripts", nullptr));
+        GoldPrice_label->setText(QApplication::translate("MainInterface", "$49.99", nullptr));
         BuyNowButton->setText(QApplication::translate("MainInterface", "Buy Now", nullptr));
         BackButton->setText(QApplication::translate("MainInterface", "Return to Purchase Screen", nullptr));
-        lineEdit_57->setText(QString());
-        lineEdit_57->setPlaceholderText(QApplication::translate("MainInterface", "First Name", nullptr));
-        comboBox_20->setItemText(0, QApplication::translate("MainInterface", "United States", nullptr));
-
-        comboBox_21->setItemText(0, QApplication::translate("MainInterface", "Select State", nullptr));
-
-        lineEdit_58->setText(QString());
-        lineEdit_58->setPlaceholderText(QApplication::translate("MainInterface", "Last Name", nullptr));
-        lineEdit_59->setPlaceholderText(QApplication::translate("MainInterface", "City", nullptr));
-        lineEdit_60->setPlaceholderText(QApplication::translate("MainInterface", "Zipcode", nullptr));
-        lineEdit_61->setPlaceholderText(QApplication::translate("MainInterface", "Email", nullptr));
-        lineEdit_62->setText(QString());
-        lineEdit_62->setPlaceholderText(QApplication::translate("MainInterface", "Address", nullptr));
-        label_55->setText(QApplication::translate("MainInterface", "Sales Tax:", nullptr));
-        label_56->setText(QApplication::translate("MainInterface", "$ 69.99", nullptr));
-        totalAmount_2->setText(QApplication::translate("MainInterface", "totalAmount", nullptr));
-        label_60->setText(QApplication::translate("MainInterface", "MORGANDEFENDER", nullptr));
-        salesTax_2->setText(QApplication::translate("MainInterface", "salesTax", nullptr));
-        label_59->setText(QApplication::translate("MainInterface", "$ 49.99", nullptr));
-        label_51->setText(QApplication::translate("MainInterface", "Subtotal:", nullptr));
         goldQtyPurchased->setText(QApplication::translate("MainInterface", "0", nullptr));
+        label_56->setText(QApplication::translate("MainInterface", "$ 69.99", nullptr));
+        label_59->setText(QApplication::translate("MainInterface", "$ 49.99", nullptr));
+        totalAmount_2->setText(QApplication::translate("MainInterface", "totalAmount", nullptr));
+        salesTax_2->setText(QApplication::translate("MainInterface", "salesTax", nullptr));
+        label_61->setText(QApplication::translate("MainInterface", "NAVIDDEFENDER", nullptr));
+        label_60->setText(QApplication::translate("MainInterface", "MORGANDEFENDER", nullptr));
         label_58->setText(QApplication::translate("MainInterface", "Quantity", nullptr));
         label_57->setText(QApplication::translate("MainInterface", "$ 29.99", nullptr));
-        label_61->setText(QApplication::translate("MainInterface", "NAVIDDEFENDER", nullptr));
         subtotal_2->setText(QApplication::translate("MainInterface", "subtotal", nullptr));
-        silverQtyPurchased->setText(QApplication::translate("MainInterface", "0", nullptr));
-        label_53->setText(QApplication::translate("MainInterface", "Total Amount:", nullptr));
+        label_54->setText(QApplication::translate("MainInterface", "Price", nullptr));
         PlatinumQtyPurchased->setText(QApplication::translate("MainInterface", "0", nullptr));
         label_62->setText(QApplication::translate("MainInterface", "JOSEPHDEFENDER", nullptr));
-        label_54->setText(QApplication::translate("MainInterface", "Price", nullptr));
+        silverQtyPurchased->setText(QApplication::translate("MainInterface", "0", nullptr));
+        label_51->setText(QApplication::translate("MainInterface", "Subtotal:", nullptr));
+        label_55->setText(QApplication::translate("MainInterface", "Sales Tax:", nullptr));
+        label_53->setText(QApplication::translate("MainInterface", "Total Amount:", nullptr));
         aboutUs_label_3->setText(QApplication::translate("MainInterface", "Receipt", nullptr));
         lineEdit_21->setText(QString());
         lineEdit_21->setPlaceholderText(QApplication::translate("MainInterface", "First Name", nullptr));

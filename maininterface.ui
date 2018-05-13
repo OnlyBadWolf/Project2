@@ -52,7 +52,7 @@
      <enum>QTabWidget::Triangular</enum>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>3</number>
     </property>
     <property name="elideMode">
      <enum>Qt::ElideRight</enum>
@@ -1068,7 +1068,7 @@
           <x>560</x>
           <y>330</y>
           <width>160</width>
-          <height>61</height>
+          <height>70</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_7">
@@ -1299,17 +1299,17 @@
            </item>
            <item>
             <property name="text">
-             <string>Silver</string>
+             <string>MORGANDEFENDER</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>Gold</string>
+             <string>NAVIDDEFENDER</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>Platinum</string>
+             <string>JOSEPHDEFENDER</string>
             </property>
            </item>
           </widget>
@@ -1353,7 +1353,7 @@
          <item row="2" column="1">
           <widget class="QLineEdit" name="name_lineEdit">
            <property name="maxLength">
-            <number>25</number>
+            <number>19</number>
            </property>
            <property name="placeholderText">
             <string>John Smith</string>
@@ -1478,7 +1478,7 @@
           <rect>
            <x>20</x>
            <y>20</y>
-           <width>731</width>
+           <width>852</width>
            <height>321</height>
           </rect>
          </property>
@@ -1493,11 +1493,12 @@
            <widget class="QLabel" name="goldDescription1">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
+              <family>Heiti SC</family>
+              <pointsize>14</pointsize>
              </font>
             </property>
             <property name="text">
-             <string>      &gt;&gt;</string>
+             <string>      &gt;&gt; Everything offered in MORGANDEFENDER</string>
             </property>
            </widget>
           </item>
@@ -1505,11 +1506,12 @@
            <widget class="QLabel" name="PlatinumDescription2">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
+              <family>Heiti SC</family>
+              <pointsize>14</pointsize>
              </font>
             </property>
             <property name="text">
-             <string>      &gt;&gt;</string>
+             <string>      &gt;&gt; Lets you track your lost Android or iOS device</string>
             </property>
            </widget>
           </item>
@@ -1518,12 +1520,14 @@
             <property name="font">
              <font>
               <family>Heiti SC</family>
+              <pointsize>15</pointsize>
               <weight>75</weight>
+              <italic>true</italic>
               <bold>true</bold>
              </font>
             </property>
             <property name="text">
-             <string>Silver</string>
+             <string>MORGANDEFENDER</string>
             </property>
            </widget>
           </item>
@@ -1532,13 +1536,13 @@
             <property name="font">
              <font>
               <family>Heiti SC</family>
-              <pointsize>15</pointsize>
+              <pointsize>18</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
             <property name="text">
-             <string>Product Description</string>
+             <string>Product Description:</string>
             </property>
            </widget>
           </item>
@@ -1546,11 +1550,12 @@
            <widget class="QLabel" name="PlatinumDescription1">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
+              <family>Heiti SC</family>
+              <pointsize>14</pointsize>
              </font>
             </property>
             <property name="text">
-             <string>      &gt;&gt;</string>
+             <string>      &gt;&gt; Everything offered in NAVIDDEFENDER</string>
             </property>
            </widget>
           </item>
@@ -1559,6 +1564,7 @@
             <property name="font">
              <font>
               <family>Heiti SC</family>
+              <pointsize>15</pointsize>
               <weight>50</weight>
               <bold>false</bold>
              </font>
@@ -1572,29 +1578,36 @@
            <widget class="QLabel" name="PlatinumDescription3">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
+              <family>Heiti SC</family>
+              <pointsize>14</pointsize>
              </font>
             </property>
             <property name="text">
-             <string>      &gt;&gt;</string>
+             <string>      &gt;&gt; Able to run alongside many other security tools without conflict</string>
             </property>
            </widget>
           </item>
           <item row="9" column="0">
-           <widget class="QSpinBox" name="platinum_spinBox"/>
+           <widget class="QSpinBox" name="platinum_spinBox">
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+           </widget>
           </item>
           <item row="0" column="1">
            <widget class="QLabel" name="price_label">
             <property name="font">
              <font>
               <family>Heiti SC</family>
-              <pointsize>15</pointsize>
+              <pointsize>18</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
             <property name="text">
-             <string>Price per Device</string>
+             <string>Price per Device:</string>
             </property>
            </widget>
           </item>
@@ -1603,12 +1616,14 @@
             <property name="font">
              <font>
               <family>Heiti SC</family>
+              <pointsize>15</pointsize>
               <weight>75</weight>
+              <italic>true</italic>
               <bold>true</bold>
              </font>
             </property>
             <property name="text">
-             <string>Platinum</string>
+             <string>JOSEPHDEFENDER</string>
             </property>
            </widget>
           </item>
@@ -1616,11 +1631,12 @@
            <widget class="QLabel" name="sliverDescription2">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
+              <family>Heiti SC</family>
+              <pointsize>14</pointsize>
              </font>
             </property>
             <property name="text">
-             <string>      &gt;&gt;</string>
+             <string>      &gt;&gt;  Anti-spam, file encryption, and anti-theft features</string>
             </property>
            </widget>
           </item>
@@ -1629,59 +1645,60 @@
             <property name="font">
              <font>
               <family>Heiti SC</family>
+              <pointsize>15</pointsize>
               <weight>75</weight>
+              <italic>true</italic>
               <bold>true</bold>
              </font>
             </property>
             <property name="text">
-             <string>Gold</string>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="1">
-           <widget class="QLabel" name="GoldPrice_label">
-            <property name="font">
-             <font>
-              <family>Heiti SC</family>
-              <weight>50</weight>
-              <bold>false</bold>
-             </font>
-            </property>
-            <property name="text">
-             <string>$49.99</string>
+             <string>NAVIDDEFENDER</string>
             </property>
            </widget>
           </item>
           <item row="5" column="0">
-           <widget class="QSpinBox" name="gold_spinBox"/>
+           <widget class="QSpinBox" name="gold_spinBox">
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+           </widget>
           </item>
           <item row="4" column="2">
            <widget class="QLabel" name="sliverDescription3">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
+              <family>Heiti SC</family>
+              <pointsize>14</pointsize>
              </font>
             </property>
             <property name="text">
-             <string>      &gt;&gt;</string>
+             <string>      &gt;&gt;  Covers up to five PCs, Macs, and Android devices</string>
             </property>
            </widget>
           </item>
           <item row="1" column="0">
-           <widget class="QSpinBox" name="silver_spinBox"/>
+           <widget class="QSpinBox" name="silver_spinBox">
+            <property name="font">
+             <font>
+              <pointsize>15</pointsize>
+             </font>
+            </property>
+           </widget>
           </item>
           <item row="0" column="0">
            <widget class="QLabel" name="qty_label">
             <property name="font">
              <font>
               <family>Heiti SC</family>
-              <pointsize>15</pointsize>
+              <pointsize>18</pointsize>
               <weight>75</weight>
               <bold>true</bold>
              </font>
             </property>
             <property name="text">
-             <string>Qty.</string>
+             <string>Qty.:</string>
             </property>
            </widget>
           </item>
@@ -1689,11 +1706,12 @@
            <widget class="QLabel" name="sliverDescription1">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
+              <family>Heiti SC</family>
+              <pointsize>14</pointsize>
              </font>
             </property>
             <property name="text">
-             <string>      &gt;&gt;</string>
+             <string>      &gt;&gt;  Web filtering blocks access to malicious sites</string>
             </property>
            </widget>
           </item>
@@ -1701,11 +1719,12 @@
            <widget class="QLabel" name="goldDescription2">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
+              <family>Heiti SC</family>
+              <pointsize>14</pointsize>
              </font>
             </property>
             <property name="text">
-             <string>      &gt;&gt;</string>
+             <string>      &gt;&gt; Real-time malware protection</string>
             </property>
            </widget>
           </item>
@@ -1714,6 +1733,7 @@
             <property name="font">
              <font>
               <family>Heiti SC</family>
+              <pointsize>15</pointsize>
               <weight>50</weight>
               <bold>false</bold>
              </font>
@@ -1727,11 +1747,27 @@
            <widget class="QLabel" name="goldDescription3">
             <property name="font">
              <font>
-              <pointsize>12</pointsize>
+              <family>Heiti SC</family>
+              <pointsize>14</pointsize>
              </font>
             </property>
             <property name="text">
-             <string>      &gt;&gt;</string>
+             <string>      &gt;&gt; Modules prevents attacks using PowerShell and malicious scripts</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLabel" name="GoldPrice_label">
+            <property name="font">
+             <font>
+              <family>Heiti SC</family>
+              <pointsize>15</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>$49.99</string>
             </property>
            </widget>
           </item>
@@ -1762,8 +1798,8 @@
        <widget class="QPushButton" name="BackButton">
         <property name="geometry">
          <rect>
-          <x>510</x>
-          <y>320</y>
+          <x>520</x>
+          <y>370</y>
           <width>220</width>
           <height>28</height>
          </rect>
@@ -1793,87 +1829,6 @@
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
         </property>
-        <widget class="QWidget" name="gridLayoutWidget_16">
-         <property name="geometry">
-          <rect>
-           <x>460</x>
-           <y>280</y>
-           <width>421</width>
-           <height>181</height>
-          </rect>
-         </property>
-         <layout class="QGridLayout" name="gridLayout_15">
-          <item row="1" column="0">
-           <widget class="QLineEdit" name="lineEdit_57">
-            <property name="text">
-             <string/>
-            </property>
-            <property name="placeholderText">
-             <string>First Name</string>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="0">
-           <widget class="QComboBox" name="comboBox_20">
-            <item>
-             <property name="text">
-              <string>United States</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item row="3" column="1">
-           <widget class="QComboBox" name="comboBox_21">
-            <item>
-             <property name="text">
-              <string>Select State</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item row="1" column="1">
-           <widget class="QLineEdit" name="lineEdit_58">
-            <property name="text">
-             <string/>
-            </property>
-            <property name="placeholderText">
-             <string>Last Name</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="0">
-           <widget class="QLineEdit" name="lineEdit_59">
-            <property name="placeholderText">
-             <string>City</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="1">
-           <widget class="QLineEdit" name="lineEdit_60">
-            <property name="placeholderText">
-             <string>Zipcode</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="0" colspan="2">
-           <widget class="QLineEdit" name="lineEdit_61">
-            <property name="placeholderText">
-             <string>Email</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="0" colspan="2">
-           <widget class="QLineEdit" name="lineEdit_62">
-            <property name="text">
-             <string/>
-            </property>
-            <property name="placeholderText">
-             <string>Address</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </widget>
         <widget class="QWidget" name="gridLayoutWidget_17">
          <property name="geometry">
           <rect>
@@ -1884,18 +1839,16 @@
           </rect>
          </property>
          <layout class="QGridLayout" name="gridLayout_16" columnstretch="0,0,0">
-          <item row="6" column="0">
-           <widget class="QLabel" name="label_55">
+          <item row="2" column="1">
+           <widget class="QLabel" name="goldQtyPurchased">
             <property name="font">
              <font>
               <family>Heiti SC</family>
               <pointsize>14</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
              </font>
             </property>
             <property name="text">
-             <string>Sales Tax:</string>
+             <string>0</string>
             </property>
            </widget>
           </item>
@@ -1912,6 +1865,19 @@
             </property>
            </widget>
           </item>
+          <item row="2" column="2">
+           <widget class="QLabel" name="label_59">
+            <property name="font">
+             <font>
+              <family>Heiti SC</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>$ 49.99</string>
+            </property>
+           </widget>
+          </item>
           <item row="7" column="2">
            <widget class="QLabel" name="totalAmount_2">
             <property name="font">
@@ -1922,19 +1888,6 @@
             </property>
             <property name="text">
              <string>totalAmount</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="0">
-           <widget class="QLabel" name="label_60">
-            <property name="font">
-             <font>
-              <family>Heiti SC</family>
-              <pointsize>14</pointsize>
-             </font>
-            </property>
-            <property name="text">
-             <string>MORGANDEFENDER</string>
             </property>
            </widget>
           </item>
@@ -1951,8 +1904,8 @@
             </property>
            </widget>
           </item>
-          <item row="2" column="2">
-           <widget class="QLabel" name="label_59">
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_61">
             <property name="font">
              <font>
               <family>Heiti SC</family>
@@ -1960,27 +1913,12 @@
              </font>
             </property>
             <property name="text">
-             <string>$ 49.99</string>
+             <string>NAVIDDEFENDER</string>
             </property>
            </widget>
           </item>
-          <item row="5" column="0">
-           <widget class="QLabel" name="label_51">
-            <property name="font">
-             <font>
-              <family>Heiti SC</family>
-              <pointsize>14</pointsize>
-              <weight>75</weight>
-              <bold>true</bold>
-             </font>
-            </property>
-            <property name="text">
-             <string>Subtotal:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="1">
-           <widget class="QLabel" name="goldQtyPurchased">
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_60">
             <property name="font">
              <font>
               <family>Heiti SC</family>
@@ -1988,22 +1926,9 @@
              </font>
             </property>
             <property name="text">
-             <string>0</string>
+             <string>MORGANDEFENDER</string>
             </property>
            </widget>
-          </item>
-          <item row="4" column="1">
-           <spacer name="verticalSpacer_11">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>40</height>
-             </size>
-            </property>
-           </spacer>
           </item>
           <item row="0" column="1">
            <widget class="QLabel" name="label_58">
@@ -2033,19 +1958,6 @@
             </property>
            </widget>
           </item>
-          <item row="2" column="0">
-           <widget class="QLabel" name="label_61">
-            <property name="font">
-             <font>
-              <family>Heiti SC</family>
-              <pointsize>14</pointsize>
-             </font>
-            </property>
-            <property name="text">
-             <string>NAVIDDEFENDER</string>
-            </property>
-           </widget>
-          </item>
           <item row="5" column="2">
            <widget class="QLabel" name="subtotal_2">
             <property name="font">
@@ -2059,21 +1971,8 @@
             </property>
            </widget>
           </item>
-          <item row="1" column="1">
-           <widget class="QLabel" name="silverQtyPurchased">
-            <property name="font">
-             <font>
-              <family>Heiti SC</family>
-              <pointsize>14</pointsize>
-             </font>
-            </property>
-            <property name="text">
-             <string>0</string>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="0">
-           <widget class="QLabel" name="label_53">
+          <item row="0" column="2">
+           <widget class="QLabel" name="label_54">
             <property name="font">
              <font>
               <family>Heiti SC</family>
@@ -2083,7 +1982,7 @@
              </font>
             </property>
             <property name="text">
-             <string>Total Amount:</string>
+             <string>Price</string>
             </property>
            </widget>
           </item>
@@ -2113,8 +2012,34 @@
             </property>
            </widget>
           </item>
-          <item row="0" column="2">
-           <widget class="QLabel" name="label_54">
+          <item row="1" column="1">
+           <widget class="QLabel" name="silverQtyPurchased">
+            <property name="font">
+             <font>
+              <family>Heiti SC</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <spacer name="verticalSpacer_11">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLabel" name="label_51">
             <property name="font">
              <font>
               <family>Heiti SC</family>
@@ -2124,7 +2049,37 @@
              </font>
             </property>
             <property name="text">
-             <string>Price</string>
+             <string>Subtotal:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="QLabel" name="label_55">
+            <property name="font">
+             <font>
+              <family>Heiti SC</family>
+              <pointsize>14</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Sales Tax:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="1">
+           <widget class="QLabel" name="label_53">
+            <property name="font">
+             <font>
+              <family>Heiti SC</family>
+              <pointsize>14</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Total Amount:</string>
             </property>
            </widget>
           </item>
@@ -2538,6 +2493,9 @@
             <property name="inputMethodHints">
              <set>Qt::ImhDigitsOnly|Qt::ImhPreferNumbers</set>
             </property>
+            <property name="maxLength">
+             <number>12</number>
+            </property>
             <property name="placeholderText">
              <string>Credit Card Number</string>
             </property>
@@ -2550,6 +2508,9 @@
            <widget class="QLineEdit" name="securityCode_lineEdit">
             <property name="inputMethodHints">
              <set>Qt::ImhDigitsOnly|Qt::ImhHiddenText|Qt::ImhNoPredictiveText|Qt::ImhPreferNumbers</set>
+            </property>
+            <property name="maxLength">
+             <number>3</number>
             </property>
             <property name="placeholderText">
              <string>Security Code</string>
@@ -2708,7 +2669,7 @@
           <rect>
            <x>10</x>
            <y>10</y>
-           <width>385</width>
+           <width>381</width>
            <height>217</height>
           </rect>
          </property>
@@ -3202,7 +3163,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>4</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="Login">
        <widget class="QWidget" name="verticalLayoutWidget">
@@ -3437,7 +3398,7 @@
           <x>40</x>
           <y>310</y>
           <width>518</width>
-          <height>32</height>
+          <height>35</height>
          </rect>
         </property>
         <layout class="QHBoxLayout" name="horizontalLayout">

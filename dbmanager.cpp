@@ -155,7 +155,7 @@ bool dbManager::addPurchase(const Purchases& newPurchase)
     int platinum;
     double total;
 
-    name = newPurchase.getName();
+    name = newPurchase.getCustomerName();
     silver = newPurchase.getQtySilver();
     gold = newPurchase.getQtyGold();
     platinum = newPurchase.getQtyPlat();

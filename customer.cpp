@@ -1,4 +1,4 @@
-#include "customer.h"
+#include"customer.h"
 
 Customer::Customer()
 {
@@ -16,6 +16,15 @@ Customer::Customer(QString name, QString address, QString interest, QString rati
     customerInterest = interest;
     customerRating = rating;
     customerPamhplet = pamphlet;
+}
+
+Customer::Customer(const Customer & otherCustomer)
+{
+    customerName = otherCustomer.getCustomerName();
+    customerAddress = otherCustomer.getCustomerAddress();
+    customerInterest = otherCustomer.getCustomerInterest();
+    customerRating = otherCustomer.getCustomerRating();
+    customerPamhplet = otherCustomer.getCustomerPamphlet();
 }
 
 QString Customer::getCustomerName() const

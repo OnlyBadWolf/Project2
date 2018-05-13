@@ -27,8 +27,8 @@ SOURCES += \
         main.cpp \
         maininterface.cpp \
     dbmanager.cpp \
-    customer.cpp \
-    purchases.cpp
+    purchases.cpp \
+    customer.cpp
 
 HEADERS += \
         maininterface.h \

@@ -9,7 +9,6 @@
 #include <QSqlDatabase>
 #include <QDebug>
 
-
 class dbManager
 {
 private:
@@ -25,10 +24,12 @@ public:
     dbManager(const dbManager&) = delete; //delete copy constructor.
     void operator =(const dbManager&) = delete; //delete = operator.
 
+    // functions that deal with add/deleting/verifying customers to the database
     bool customerExists(const Customer& customer);
     bool addCustomer(const Customer& newCustomer);
     bool deleteCustomer(const Customer& customer);
 
+    // function to add a purchase to the database
     bool addPurchase(const Purchases& newPurchase);
 };
 

@@ -53,13 +53,13 @@ OBJECTS_DIR   = ./
 SOURCES       = main.cpp \
 		maininterface.cpp \
 		dbmanager.cpp \
-		customer.cpp \
-		purchases.cpp moc_maininterface.cpp
+		purchases.cpp \
+		customer.cpp moc_maininterface.cpp
 OBJECTS       = main.o \
 		maininterface.o \
 		dbmanager.o \
-		customer.o \
 		purchases.o \
+		customer.o \
 		moc_maininterface.o
 DIST          = ../../../Qt/5.10.1/clang_64/mkspecs/features/spec_pre.prf \
 		../../../Qt/5.10.1/clang_64/mkspecs/qdevice.pri \
@@ -254,8 +254,8 @@ DIST          = ../../../Qt/5.10.1/clang_64/mkspecs/features/spec_pre.prf \
 		purchases.h main.cpp \
 		maininterface.cpp \
 		dbmanager.cpp \
-		customer.cpp \
-		purchases.cpp
+		purchases.cpp \
+		customer.cpp
 QMAKE_TARGET  = Project-Two
 DESTDIR       = 
 TARGET        = Project-Two.app/Contents/MacOS/Project-Two
@@ -687,7 +687,7 @@ distdir: FORCE
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents ../../../Qt/5.10.1/clang_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents maininterface.h constants.h dbmanager.h customer.h purchases.h $(DISTDIR)/
-	$(COPY_FILE) --parents main.cpp maininterface.cpp dbmanager.cpp customer.cpp purchases.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents main.cpp maininterface.cpp dbmanager.cpp purchases.cpp customer.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents maininterface.ui $(DISTDIR)/
 
 
@@ -877,6 +877,25 @@ dbmanager.o: dbmanager.cpp dbmanager.h \
 		../../../Qt/5.10.1/clang_64/lib/QtCore.framework/Headers/qdebug.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o dbmanager.o dbmanager.cpp
 
+purchases.o: purchases.cpp purchases.h \
+		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/QtSql \
+		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qtsqlglobal.h \
+		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qsqldatabase.h \
+		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qsqldriver.h \
+		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qsqldriverplugin.h \
+		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qsqlerror.h \
+		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qsqlfield.h \
+		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qsqlindex.h \
+		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qsqlquery.h \
+		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qsqlquerymodel.h \
+		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qsqlrecord.h \
+		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qsqlrelationaldelegate.h \
+		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qsqlrelationaltablemodel.h \
+		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qsqlresult.h \
+		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qsqltablemodel.h \
+		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qtsqlversion.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o purchases.o purchases.cpp
+
 customer.o: customer.cpp customer.h \
 		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/QtSql \
 		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qtsqlglobal.h \
@@ -896,25 +915,6 @@ customer.o: customer.cpp customer.h \
 		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qtsqlversion.h \
 		purchases.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o customer.o customer.cpp
-
-purchases.o: purchases.cpp purchases.h \
-		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/QtSql \
-		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qtsqlglobal.h \
-		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qsqldatabase.h \
-		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qsqldriver.h \
-		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qsqldriverplugin.h \
-		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qsqlerror.h \
-		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qsqlfield.h \
-		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qsqlindex.h \
-		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qsqlquery.h \
-		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qsqlquerymodel.h \
-		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qsqlrecord.h \
-		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qsqlrelationaldelegate.h \
-		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qsqlrelationaltablemodel.h \
-		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qsqlresult.h \
-		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qsqltablemodel.h \
-		../../../Qt/5.10.1/clang_64/lib/QtSql.framework/Headers/qtsqlversion.h
-	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o purchases.o purchases.cpp
 
 moc_maininterface.o: moc_maininterface.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_maininterface.o moc_maininterface.cpp

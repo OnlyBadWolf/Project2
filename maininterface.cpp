@@ -175,13 +175,22 @@ void MainInterface::on_buttonBox_accepted()
 
         while (retrieveComment[count] != NULL)
         {
-            if (count % 55 != 0)
+            if (count % 55 != 0 || count == 0)
             {
-                comment[count + i] = retrieveComment[count];
+                comment[count + i] = retrieveComment[count - i];
             }
             else
             {
-                comment.insert(count +i,'\n'); //[count + i] = "\n";
+                if (comment[count + i] == " ")
+                {
+                    comment.insert(count + i,'\n');
+                    i++;
+                }
+                else
+                {
+                    comment.insert(count + i,"-\n");
+                    i++;
+                }
             }
 
             count++;
@@ -379,7 +388,7 @@ void MainInterface::on_sort_name_clicked()
     QSqlQuery query;
 
 
-    query.prepare("SELECT name,address,interest,rating,pamphlet FROM customers ORDER BY name ASC");
+    query.prepare("SELECT Name,Address,Interest,Rating,Pamphlet FROM customers ORDER BY Name ASC");
     query.exec();
 
     model->setQuery(query);
@@ -394,7 +403,7 @@ void MainInterface::on_sort_key_clicked()
     QSqlQueryModel * model = new QSqlQueryModel();
     QSqlQuery query;
 
-    query.prepare("SELECT Name,Address,Interest,Rating,Pamphlet FROM customers WHERE rating = 'Key' ORDER BY name ASC");
+    query.prepare("SELECT Name,Address,Interest,Rating,Pamphlet FROM customers WHERE rating = 'Key' ORDER BY Name ASC");
     query.exec();
 
     model->setQuery(query);
@@ -409,7 +418,7 @@ void MainInterface::on_sort_purchases_clicked()
     QSqlQueryModel * model = new QSqlQueryModel();
     QSqlQuery query;
 
-    query.prepare("SELECT name,silver,gold,platinum,total FROM transactions ORDER BY name ASC");
+    query.prepare("SELECT Name,Silver,Gold,Platinum,Total FROM transactions ORDER BY Name ASC");
     query.exec();
 
     model->setQuery(query);
@@ -691,7 +700,7 @@ void MainInterface::on_BackButton_2_clicked()
 
 void MainInterface::on_buyButton_clicked()
 {
-    ui->tabWidget->setCurrentIndex(4);
+    ui->tabWidget->setCurrentIndex(3);
 }
 
 void MainInterface::on_pamplet_button_clicked()
@@ -760,7 +769,7 @@ void MainInterface::on_SortByPampletRequest_clicked()
     QSqlQuery query;
 
 
-    query.prepare("SELECT name,address FROM Pamphlet ORDER BY name ASC");
+    query.prepare("SELECT Name,Address FROM Pamphlet ORDER BY Name ASC");
     query.exec();
 
     model->setQuery(query);
@@ -843,10 +852,8 @@ void MainInterface::makeReviewsAvailable()
 
 
     // RESIZE THE REVIEW TABLE
-   // ui->tableReview->setColumnWidth(3,470);
-    ui->tableReview->resizeRowsToContents();
     ui->tableReview->resizeColumnsToContents();
-    qDebug() << ui->tableReview->columnWidth(3);
+    ui->tableReview->resizeRowsToContents();
 }
 
 void MainInterface::purchaseAmt(double qtySilver, double qtyGold, double qtyPlat)

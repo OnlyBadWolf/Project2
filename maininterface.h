@@ -109,6 +109,8 @@ private slots:
 
     void purchaseAmt(double, double, double);
 
+    void on_tabWidget_currentChanged();
+
 private:
     Ui::MainInterface *ui;
 };

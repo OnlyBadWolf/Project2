@@ -52,7 +52,7 @@ MainInterface::MainInterface(QWidget *parent) :
     ui->silver_textEdit->setReadOnly(1);
 
     // SETTING GOLD INFO
-    ui->gold_textEdit->setText("\If you judge an antivirus on the length of its feature list, NAVIDDEFENDER Antivirus 2018 Edition might be a disappointment. There’s no firewall, password manager, file shredder, vulnerability scanner or any of the bundled extras you'll often find elsewhere."
+    ui->gold_textEdit->setText("If you judge an antivirus on the length of its feature list, NAVIDDEFENDER Antivirus 2018 Edition might be a disappointment. There’s no firewall, password manager, file shredder, vulnerability scanner or any of the bundled extras you'll often find elsewhere."
                                "\n\nThis doesn't mean the package is short on power, it's just more focused on the antivirus fundamentals. NAVIDDEFENDER Antivirus 2018 Edition comes with real-time malware protection, an anti-ransomware layer, exploit protection, URL filtering to block malicious websites, and modules to prevent attacks using PowerShell and malicious scripts."
                                "\n\nA Device Control module limits the risk of infection from other devices by controlling access to USB sticks, external hard drives, optical storage media, even devices connecting by Bluetooth and FireWire. It's an unusual extra, but could make a difference if others are regularly plugging devices into your PC."
                                "\n\nNAVIDDEFENDER Antivirus 2018 Edition isn't aimed at beginners. The interface is clumsy sometimes, some features are very advanced, and even the Help isn't always exactly helpful."
@@ -61,6 +61,48 @@ MainInterface::MainInterface(QWidget *parent) :
                                "\n\nNAVIDDEFENDER Internet Security builds on NAVIDDEFENDER and triples the number of devices covered plus offers firewall, botnet protection, webcam protection, antispam and more.");
 
     ui->gold_textEdit->setReadOnly(1);
+
+    // SETTING ABOUT US
+    ui->aboutUs_textEdit->setText("Why is cybersecurity important?"
+                                  "\n\nIn today's connected world, everyone benefits from advanced cyberdefense programs. At an individual level, a cybersecurity attack can result in everything from identity theft, to extortion attempts, to the loss of important data like family photos. Everyone relies on critical infrastructure like power plants, hospitals, and financial service companies. Securing these and other organizations is essential to keeping our society functioning."
+                                  "\n\nEveryone also benefits from the work of cyberthreat researchers, like the team of 250 threat researchers at Talos, who investigate new and emerging threats and cyber attack strategies. They reveal new vulnerabilities, educate the public on the importance of cybersecurity, and strengthen open source tools. Their work makes the Internet safer for everyone.");
+
+    ui->aboutUs_textEdit->setReadOnly(1);
+
+    // SETTING CONTACT US
+    ui->contactUs_textEdit->setText("United States"
+                                    "\nBusiness Support (Including ICyberSecurity  SaaS Products)"
+                                    "\n\nCustomer Service"
+                                    "\nFor assistance with non-technical questions, including product activations, license enquiries, grant numbers, support entitlements, and ServicePortal passwords, our Customer Support team can help online or via phone."
+                                    "\nCorporate Customer Service Request Form "
+                                    "\n\nTel: 1-888-847-8766\n"
+                                    "\n\nTech Support"
+                                    "\nCustomers requiring technical assistance on products with a valid Business Support Grant can reach our Technical Support team online or via phone."
+                                    "\n\nWebsite: https://support.icybersecurity.com/ "
+                                    "\n\nTel: 1-800-937-2237\n"
+                                    "\n\nHome & Home Office Support"
+                                    "\nOur Customer Support team is standing by to help you over the phone, through online chat, or our community forums. You can also use self-help options, including ICyberSecurity  Virtual Technician and FAQs."
+                                    "\n\nWebsite: https://support.icybersecurity.com/ "
+                                    "\n\nTel: 1-866-622-3911\n"
+                                    "\n\nTotal Satisfaction Promise"
+                                    "\nWe are committed to your complete satisfaction. If you are unhappy with your ICyberSecurity Support experience, please submit a case online to our Executive Escalations team and let us make things right. We will take ownership of your problem until it is resolved. That's the ICyberSecurity  promise!");
+
+    ui->contactUs_textEdit->setReadOnly(1);
+
+    // SETTING OUR PROMISE
+    ui->guaranteePolicy_textEdit->setText("The number of computer security incidents related to malware and viruses and the resulting cost of business disruption and service restoration continue to escalate.  Implementing antimalware and antivirus systems, blocking unnecessary access to networks and computers, improving user security awareness, and early detection and mitigation of security incidents are best practice actions that must be taken to reduce risks and manage the computing environment."
+                                          "\n\n\nLICENSING, MAINTENANCE AND SUPPORT:"
+                                          "\n\nMaintenance actions (software updates, definition updates, infections, etc.) shall be logged and retained for a period aligning with [Insert Appropriate Role] and [LEP] requirements to allow proper investigations into malware related incidents."
+                                          "\n\nManagement shall ensure proper licensing, tracking, and related documentation.  This shall include processes and procedures supporting:"
+                                          "\n\n\t•    Antivirus software installation on all systems."
+                                          "\n\n\t•    Regular threat scanning capable of detecting, removing, and protecting \n\tagainst known types of malicious software."
+                                          "\n\n\t•    Annual review and re-evaluation of low-risk systems and appliances not \n\tconsidered affected by malicious software based on current best practice."
+                                          "\n\n\t•    Pro-active monitoring and update mechanisms supporting this policy."
+                                          "\n\n\t•    Verification that mechanisms are in place for preventing users from disabling \n\tor modifying antivirus detection tools."
+                                          "\n\n\t•    Processes and procedures for exceptions to the policy exist and are followed \n\tbased on a case-by-case evaluation."
+                                          "\n\n\t•    If antivirus mechanisms are disabled, additional security measures may need \n\tto be implemented for the period of time during which antivirus protection is not \n\tactive.");
+
+    ui->guaranteePolicy_textEdit->setReadOnly(1);
 
     // PROGRAM OPENS TO THE HOME PAGE
     ui->tabWidget->setCurrentIndex(0);
@@ -219,6 +261,9 @@ void MainInterface::on_BuyNowButton_clicked()
 void MainInterface::on_BackButton_clicked()
 {
     ui->PaymentInformation->setCurrentIndex(0);
+    ui->silver_spinBox->setValue(0);
+    ui->gold_spinBox->setValue(0);
+    ui->platinum_spinBox->setValue(0);
 }
 
 void MainInterface::on_officiallyBuyNowButton_clicked()
@@ -253,6 +298,26 @@ void MainInterface::on_officiallyBuyNowButton_clicked()
         if(dbManager::instance().addPurchase(Purchases(name, qtySilver, qtyGold, qtyPlat, total)))
         {
             qDebug() << "purchase succesful";
+            ui->silverQtyPurchased->setText(silver);
+            ui->goldQtyPurchased->setText(gold);
+            ui->PlatinumQtyPurchased->setText(plat);
+            ui->PaymentInformation->setCurrentIndex(1);
+
+            double sub;
+            double tax;
+            double total;
+
+            sub = (qtySilver * 29.99) + (qtyGold * 49.99) + (qtyPlat * 69.99);
+            tax = sub * 0.07;
+            total = sub + tax;
+
+            QString subTotal = "$ " + QString::number(sub,'f',2);
+            QString totalTax = "$ " + QString::number(tax,'f',2);
+            QString purchaseTotal = "$ " + QString::number(total,'f',2);
+
+            ui->subtotal_2->setText(subTotal);
+            ui->salesTax_2->setText(totalTax);
+            ui->totalAmount_2->setText(purchaseTotal);
         }
         else
         {
@@ -266,7 +331,7 @@ void MainInterface::on_officiallyBuyNowButton_clicked()
     catch(QString statement)
     {
         qDebug() << statement;
-        ui->purchaseStatus->setText("Need Failed.");
+        ui->purchaseStatus->setText("Purchase Failed.");
     }
 }
 
@@ -801,5 +866,19 @@ void MainInterface::purchaseAmt(double qtySilver, double qtyGold, double qtyPlat
     ui->subtotal->setText(subTotal);
     ui->salesTax->setText(totalTax);
     ui->totalAmount->setText(purchaseTotal);
+}
+
+
+void MainInterface::on_tabWidget_currentChanged()
+{
+    // RESET THE REVIEW PAGE
+    ui->Review_Page->setCurrentIndex(0);
+    ui->name_lineEdit->clear();
+    ui->rate_spinBox->setValue(5);
+    ui->product_comboBox->setCurrentIndex(0);
+    ui->review_textEdit->clear();
+
+    // DISPLAY THE HOME SCREEN
+    ui->HomeWidget->setCurrentIndex(0);
 }
 

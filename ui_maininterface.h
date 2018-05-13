@@ -2103,7 +2103,7 @@ public:
         tabWidget->setCurrentIndex(3);
         HomeWidget->setCurrentIndex(0);
         Review_Page->setCurrentIndex(1);
-        PaymentInformation->setCurrentIndex(1);
+        PaymentInformation->setCurrentIndex(2);
         AdminWidget->setCurrentIndex(2);
 
 

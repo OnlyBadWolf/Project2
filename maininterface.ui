@@ -52,7 +52,7 @@
      <enum>QTabWidget::Triangular</enum>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>6</number>
     </property>
     <property name="elideMode">
      <enum>Qt::ElideRight</enum>
@@ -1450,12 +1450,12 @@
        <rect>
         <x>20</x>
         <y>40</y>
-        <width>791</width>
+        <width>801</width>
         <height>431</height>
        </rect>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="ChoosingProduct">
        <widget class="QFrame" name="Frame1">
@@ -1463,7 +1463,7 @@
          <rect>
           <x>10</x>
           <y>10</y>
-          <width>771</width>
+          <width>791</width>
           <height>361</height>
          </rect>
         </property>
@@ -1478,7 +1478,7 @@
           <rect>
            <x>20</x>
            <y>20</y>
-           <width>852</width>
+           <width>761</width>
            <height>321</height>
           </rect>
          </property>
@@ -1498,7 +1498,7 @@
              </font>
             </property>
             <property name="text">
-             <string>      &gt;&gt; Everything offered in MORGANDEFENDER</string>
+             <string>   &gt;&gt; Everything offered in MORGANDEFENDER</string>
             </property>
            </widget>
           </item>
@@ -1511,7 +1511,7 @@
              </font>
             </property>
             <property name="text">
-             <string>      &gt;&gt; Lets you track your lost Android or iOS device</string>
+             <string>   &gt;&gt; Lets you track your lost Android or iOS device</string>
             </property>
            </widget>
           </item>
@@ -1555,7 +1555,7 @@
              </font>
             </property>
             <property name="text">
-             <string>      &gt;&gt; Everything offered in NAVIDDEFENDER</string>
+             <string>   &gt;&gt; Everything offered in NAVIDDEFENDER</string>
             </property>
            </widget>
           </item>
@@ -1583,7 +1583,7 @@
              </font>
             </property>
             <property name="text">
-             <string>      &gt;&gt; Able to run alongside many other security tools without conflict</string>
+             <string>   &gt;&gt; Able to run alongside many other security tools without conflict</string>
             </property>
            </widget>
           </item>
@@ -1636,7 +1636,7 @@
              </font>
             </property>
             <property name="text">
-             <string>      &gt;&gt;  Anti-spam, file encryption, and anti-theft features</string>
+             <string>   &gt;&gt;  Anti-spam, file encryption, and anti-theft features</string>
             </property>
            </widget>
           </item>
@@ -1674,7 +1674,7 @@
              </font>
             </property>
             <property name="text">
-             <string>      &gt;&gt;  Covers up to five PCs, Macs, and Android devices</string>
+             <string>   &gt;&gt;  Covers up to five PCs, Macs, and Android devices</string>
             </property>
            </widget>
           </item>
@@ -1711,7 +1711,7 @@
              </font>
             </property>
             <property name="text">
-             <string>      &gt;&gt;  Web filtering blocks access to malicious sites</string>
+             <string>   &gt;&gt;  Web filtering blocks access to malicious sites</string>
             </property>
            </widget>
           </item>
@@ -1724,7 +1724,7 @@
              </font>
             </property>
             <property name="text">
-             <string>      &gt;&gt; Real-time malware protection</string>
+             <string>   &gt;&gt; Real-time malware protection</string>
             </property>
            </widget>
           </item>
@@ -1752,7 +1752,7 @@
              </font>
             </property>
             <property name="text">
-             <string>      &gt;&gt; Modules prevents attacks using PowerShell and malicious scripts</string>
+             <string>   &gt;&gt; Modules prevents attacks using PowerShell and malicious scripts</string>
             </property>
            </widget>
           </item>
@@ -2669,7 +2669,7 @@
           <rect>
            <x>10</x>
            <y>10</y>
-           <width>381</width>
+           <width>385</width>
            <height>217</height>
           </rect>
          </property>

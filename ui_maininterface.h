@@ -900,17 +900,17 @@ public:
         Purchase->setObjectName(QStringLiteral("Purchase"));
         PaymentInformation = new QStackedWidget(Purchase);
         PaymentInformation->setObjectName(QStringLiteral("PaymentInformation"));
-        PaymentInformation->setGeometry(QRect(20, 40, 791, 431));
+        PaymentInformation->setGeometry(QRect(20, 40, 801, 431));
         ChoosingProduct = new QWidget();
         ChoosingProduct->setObjectName(QStringLiteral("ChoosingProduct"));
         Frame1 = new QFrame(ChoosingProduct);
         Frame1->setObjectName(QStringLiteral("Frame1"));
-        Frame1->setGeometry(QRect(10, 10, 771, 361));
+        Frame1->setGeometry(QRect(10, 10, 791, 361));
         Frame1->setFrameShape(QFrame::StyledPanel);
         Frame1->setFrameShadow(QFrame::Raised);
         gridLayoutWidget_2 = new QWidget(Frame1);
         gridLayoutWidget_2->setObjectName(QStringLiteral("gridLayoutWidget_2"));
-        gridLayoutWidget_2->setGeometry(QRect(20, 20, 852, 321));
+        gridLayoutWidget_2->setGeometry(QRect(20, 20, 761, 321));
         WhatToPurchase = new QGridLayout(gridLayoutWidget_2);
         WhatToPurchase->setSpacing(6);
         WhatToPurchase->setContentsMargins(11, 11, 11, 11);
@@ -1484,7 +1484,7 @@ public:
 
         gridLayoutWidget_15 = new QWidget(frame_5);
         gridLayoutWidget_15->setObjectName(QStringLiteral("gridLayoutWidget_15"));
-        gridLayoutWidget_15->setGeometry(QRect(10, 10, 381, 217));
+        gridLayoutWidget_15->setGeometry(QRect(10, 10, 385, 217));
         gridLayout_14 = new QGridLayout(gridLayoutWidget_15);
         gridLayout_14->setSpacing(6);
         gridLayout_14->setContentsMargins(11, 11, 11, 11);
@@ -2103,7 +2103,7 @@ public:
         tabWidget->setCurrentIndex(3);
         HomeWidget->setCurrentIndex(0);
         Review_Page->setCurrentIndex(1);
-        PaymentInformation->setCurrentIndex(2);
+        PaymentInformation->setCurrentIndex(0);
         AdminWidget->setCurrentIndex(2);
 
 
@@ -2196,23 +2196,23 @@ public:
         reviewStatus->setText(QString());
         Company_label_6->setText(QApplication::translate("MainInterface", "ICyberSecurity", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(Reviews), QApplication::translate("MainInterface", "Reviews", nullptr));
-        goldDescription1->setText(QApplication::translate("MainInterface", "      >> Everything offered in MORGANDEFENDER", nullptr));
-        PlatinumDescription2->setText(QApplication::translate("MainInterface", "      >> Lets you track your lost Android or iOS device", nullptr));
+        goldDescription1->setText(QApplication::translate("MainInterface", "   >> Everything offered in MORGANDEFENDER", nullptr));
+        PlatinumDescription2->setText(QApplication::translate("MainInterface", "   >> Lets you track your lost Android or iOS device", nullptr));
         Silver_label_2->setText(QApplication::translate("MainInterface", "MORGANDEFENDER", nullptr));
         product_label->setText(QApplication::translate("MainInterface", "Product Description:", nullptr));
-        PlatinumDescription1->setText(QApplication::translate("MainInterface", "      >> Everything offered in NAVIDDEFENDER", nullptr));
+        PlatinumDescription1->setText(QApplication::translate("MainInterface", "   >> Everything offered in NAVIDDEFENDER", nullptr));
         silverPrice_label->setText(QApplication::translate("MainInterface", "$29.99", nullptr));
-        PlatinumDescription3->setText(QApplication::translate("MainInterface", "      >> Able to run alongside many other security tools without conflict", nullptr));
+        PlatinumDescription3->setText(QApplication::translate("MainInterface", "   >> Able to run alongside many other security tools without conflict", nullptr));
         price_label->setText(QApplication::translate("MainInterface", "Price per Device:", nullptr));
         Platinum_label_2->setText(QApplication::translate("MainInterface", "JOSEPHDEFENDER", nullptr));
-        sliverDescription2->setText(QApplication::translate("MainInterface", "      >>  Anti-spam, file encryption, and anti-theft features", nullptr));
+        sliverDescription2->setText(QApplication::translate("MainInterface", "   >>  Anti-spam, file encryption, and anti-theft features", nullptr));
         gold_label->setText(QApplication::translate("MainInterface", "NAVIDDEFENDER", nullptr));
-        sliverDescription3->setText(QApplication::translate("MainInterface", "      >>  Covers up to five PCs, Macs, and Android devices", nullptr));
+        sliverDescription3->setText(QApplication::translate("MainInterface", "   >>  Covers up to five PCs, Macs, and Android devices", nullptr));
         qty_label->setText(QApplication::translate("MainInterface", "Qty.:", nullptr));
-        sliverDescription1->setText(QApplication::translate("MainInterface", "      >>  Web filtering blocks access to malicious sites", nullptr));
-        goldDescription2->setText(QApplication::translate("MainInterface", "      >> Real-time malware protection", nullptr));
+        sliverDescription1->setText(QApplication::translate("MainInterface", "   >>  Web filtering blocks access to malicious sites", nullptr));
+        goldDescription2->setText(QApplication::translate("MainInterface", "   >> Real-time malware protection", nullptr));
         PlatinumPrice_label_2->setText(QApplication::translate("MainInterface", "$69.99", nullptr));
-        goldDescription3->setText(QApplication::translate("MainInterface", "      >> Modules prevents attacks using PowerShell and malicious scripts", nullptr));
+        goldDescription3->setText(QApplication::translate("MainInterface", "   >> Modules prevents attacks using PowerShell and malicious scripts", nullptr));
         GoldPrice_label->setText(QApplication::translate("MainInterface", "$49.99", nullptr));
         BuyNowButton->setText(QApplication::translate("MainInterface", "Buy Now", nullptr));
         BackButton->setText(QApplication::translate("MainInterface", "Return to Purchase Screen", nullptr));

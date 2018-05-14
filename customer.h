@@ -3,6 +3,8 @@
 
 #include <QtSql>
 #include "purchases.h"
+#include "address.h"
+
 
 class Customer : public Purchases
 {
@@ -29,6 +31,7 @@ private:
     QString customerInterest;
     QString customerRating;
     QString customerPamhplet;
+    Address<QString> theAdress;
 };
 
 #endif // CUSTOMER_H

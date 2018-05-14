@@ -25,7 +25,6 @@ private:
     int qtyGold;
     int qtyPlat;
     double subTotal;
-
 };
 
 #endif // PURCHASES_H

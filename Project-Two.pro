@@ -28,14 +28,16 @@ SOURCES += \
         maininterface.cpp \
     dbmanager.cpp \
     purchases.cpp \
-    customer.cpp
+    customer.cpp \
+    address.cpp
 
 HEADERS += \
         maininterface.h \
     constants.h \
     dbmanager.h \
     customer.h \
-    purchases.h
+    purchases.h \
+    address.h
 
 FORMS += \
         maininterface.ui

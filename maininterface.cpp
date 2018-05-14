@@ -104,6 +104,31 @@ MainInterface::MainInterface(QWidget *parent) :
 
     ui->guaranteePolicy_textEdit->setReadOnly(1);
 
+    ui->Help_textEdit->setText("Frequently Asked Questions:"
+                               "\n\n\nDo We Have To Uninstall The Existing Antivirus Program Before Installing A New One?"
+                               "\n\nIf you are changing to a new antivirus product, you will need to uninstall the previous antivirus scanner first. After uninstalling, you must reboot your PC before installing the new scanner."
+                               "If you are simply upgrading the existing antivirus software to a newer version of the same product, there is no need to uninstall the older version first. However, if the new version is two or more versions newer than the old, then you will want to uninstall the old version before installing the new. Again, anytime you uninstall an existing antivirus product, be sure to reboot the computer before installing the new scanner."
+                               "\n\n\nCan Two Antivirus Scanners Be Run On The Same System At The Same Time?"
+                               "\n\nIt is never a good idea to run two antivirus scanners simultaneously. However, if only one of the scanners has real-time protection enabled and the second scanner is used only to manually scan selected files, they may possible co-exist peacefully. In some cases, an antivirus scanner will not install if it detects another antivirus scanner already installed on the system."
+                               "\n\n\nWhy Does One Scanner Detect A Virus But Another Does Not?"
+                               "\n\nAntivirus is largely signature-based. The signatures are created by the individual vendors and are unique to their products (or the products that use those particular scanning engines. Hence one vendor may have added detection (i.e. a signature) for a particular malware while another vendor may not have."
+                               "\n\n\nInstallation Freeze Solution "
+                               "\n\nIf the installation stops at the step “Installing Microsoft .Net Framework 4.0…” with the progress bar notification “About five seconds left”, follow the guide below to fix the issue."
+                               "\n1.    Create a restore point Click on your operating system to open the guide: "
+                               "\n\t•    Windows 10"
+                               "\n\t•    Windows Vista / Windows 7 / Windows 8"
+                               "\n2.    Click the link corresponding to your operating system to download Microsoft .Net \n\tFramework: "
+                               "\n\t•    Windows Vista / Windows 7"
+                               "\n\t•    Windows XP"
+                               "\n3.    In the browser window, click Download."
+                               "\n4.    Run the downloaded installer."
+                               "\n5.    Read the license agreement terms and select the check box for I have read and \n\taccept the license terms."
+                               "\n6.    Click Install."
+                               "\n\n\n\n\nTerms & conditions:"
+                               "\n\nIcyberSecurity  Virus Protection Promise Virus Protection Promise includes a virus removal service provided by a Symantec service representative. In the unlikely event that Symantec is unable to remove the virus from your device, You may be entitled to a refund of the IcyberSecurity  subscription or IcyberSecurity  bundle (as applicable). In order to be entitled for a refund, the following terms and condition apply: (a) You must purchase, renew, or upgrade your IcyberSecurity  subscription directly from IcyberSecurity .com, or subscribe to the IcyberSecurity  Automatic Renewal Service online; (b) Your refund will be a full refund based on the actual price paid for your current IcyberSecurity  subscription term. If you purchased a IcyberSecurity  bundle (defined as IcyberSecurity  subscriptions and/or IcyberSecurity  services), your refund will be based on the actual price paid for the term of your current IcyberSecurity  bundle. Or, if your bundled purchase contains a IcyberSecurity  subscription with a non-IcyberSecurity  subscription/product, your refund will be limited to the MSRP of your IcyberSecurity  subscription for the current term, not to exceed the total price paid for that bundle. The refund will be net of any discounts or refunds received and less any shipping, handling and any applicable taxes, except in certain states and countries where shipping, handling and taxes are refundable; (c) If You have purchased the IcyberSecurity  subscription from a retailer, proof of purchase is required; (d) You must have the purchased IcyberSecurity  subscription installed and activated on Your device prior to the time it being infected by viruses.");
+
+    ui->Help_textEdit->setReadOnly(1);
+
     // PROGRAM OPENS TO THE HOME PAGE
     ui->tabWidget->setCurrentIndex(0);
 }
